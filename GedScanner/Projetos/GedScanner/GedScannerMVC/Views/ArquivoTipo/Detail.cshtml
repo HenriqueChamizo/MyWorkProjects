@@ -1,0 +1,339 @@
+﻿@using GedScannerMVC.ClassView
+@using Model.Enuns
+@model ArquivoTipo
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    @Html.Partial("_HeaderGeral", new _HeaderGeral() { imageSrc = "~/Image/Paginas/TipoArquivo-gray.png", title = "Tipos de Arquivos", TitlePageSmall = null })
+</section>
+
+<style>
+    .erro {
+        border-color: rgba(255,0,0,.8);
+        -webkit-box-shadow: 0 0 8px rgba(255,0,0,.6);
+        box-shadow: 0 0 8px rgba(255,0,0,.6);
+    }
+</style>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div class="row">
+                        <div class="col-sm-12"><br /></div>
+                        <div class="col-sm-12" id="erro">
+                            @*<div class="alert alert-danger" role="alert"> <strong>Oh snap!</strong> Change a few things up and try submitting again. </div>*@
+                        </div>
+                        <div class="col-sm-12"><br /></div>
+                        <div class="col-sm-6">
+                            <div class="form-group floating-label">
+                                <input type="text" id="descricao" name="descricao" required="required" class="form-control" value="@Model.descricao" />
+                                <label for="descricao">Descrição</label>
+                                <input type="hidden" id="passo" value="0" />
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <br />
+                            <label>
+                                <input type="checkbox" id="exporta" name="exporta" class="checkbox-inline" @(Model.exporta ? "checked=checked" : "") style="margin:0px" /> Exportar
+                            </label>
+                        </div>
+                        <div class="col-sm-12"><br /></div>
+                        <div class="col-sm-12" style="min-height:35px">
+                            <div style="float:left;margin-right:15px;">
+                                <button type="button" class="btn btn-default" id="btnAddCampo">
+                                    <span class="glyphicon glyphicon-plus"></span> Add Campo
+                                </button>
+                            </div>
+                            <div style="width:35px;float:left;" id="loading"></div>
+                        </div>
+                        <div class="col-sm-12" id="hiddens">
+                            <input type="hidden" id="hiddenCount" value="@Model.campo" />
+                            <input type="hidden" id="hiddenRemoved" value="[]" />
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="row" id="Campos"></div>
+                </div>
+                <div class="box-footer">
+                    <div style="float:right;margin-right:15px;">
+                        <button type="button" class="btn btn-default" id="btnSubmit">
+                            Salvar
+                        </button>
+                    </div>
+                    <div style="width:35px;float:right;" id="loadingSave"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    @{
+        string[] split = Request.FilePath.ToString().Split(new string[] { "/" }, StringSplitOptions.None);
+        string id = split[split.Length - 1];
+    }
+    function OnLoad() {
+        $(document).ajaxStart(function () {
+            $('#loading').html('@Html.Partial("Loading")');
+        });
+
+        var id = @id;
+        jQuery.ajax({
+            url: '@Url.Action("AddCamposDinamicoDetail", "ArquivoTipo")',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                'id': id
+            }),
+            dataType: "html",
+            success: function (result) {
+                @*$('#formDynamic').html('@Html.Partial("Loading")'.replace('"', '\''));*@
+            }
+        }).done(function (data) {
+            $('#Campos').append(data);
+            var split = data.replace(" ", "").replace("/n", "").replace("\n", "").split("<!--");
+            var count = split[split.length - 1].replace("-->", "");
+            var value = String(parseInt(count));
+            $('#hiddenCount').val(value);
+            $('#loading').html("");
+        });
+
+        $(document).ajaxSuccess(function () {
+            $('#loading').html("");
+        });
+
+        $('.form-control-group .form-control').on('keyup change', function (e) {
+            var input = $(e.currentTarget);
+
+            if ($.trim(input.val()) !== '') {
+                input.addClass('dirty').removeClass('static');
+            } else {
+                input.removeClass('dirty').removeClass('static');
+            }
+        });
+
+        $('.form-control-group .form-control').each(function () {
+            var input = $(this);
+
+            if ($.trim(input.val()) !== '') {
+                input.addClass('static').addClass('dirty');
+            }
+        });
+
+        $('.form-horizontal .form-control').each(function () {
+            $(this).after('<div class="form-control-line"></div>');
+        });
+    }
+    OnLoad();
+    function OnKeyUp(id){
+        //$('#' + id).keyup(function () {
+
+        //}).keyup();
+        var passo = $("#passo").val();
+        if (this.value != "") {
+            $('#erro').html("");
+            var count = parseInt(String($('#hiddenCount').val()));
+            var dx = document.getElementById(id).value;
+            for (var y = 0; y < count; y++) {
+                var input = document.getElementById("descricao-" + String(y));
+                if (id != input.id) {
+                    var dy = input.value;
+                    if (dx == dy) {
+                        $('#erro').html('@Html.Partial("Utilities/Alert", new Alert() { type_color = TypesBootstrapColors.danger, title = "Campos Iguais", text = "Formulário não pode ter Campos com Descrição iguais!" } ).ToString()');
+                        $('#loadingSave').html("");
+                        document.getElementById(id).className = "erro form-control";
+                        document.getElementById("descricao-" + String(y)).className = "erro form-control";
+                        return;
+                    }
+                    else {
+                        $('#erro').html("");
+                        $('#loadingSave').html("");
+                        document.getElementById(id).className = "form-control";
+                        document.getElementById("descricao-" + String(y)).className = "form-control";
+                    }
+                }
+            }
+        }
+        else {
+            if (passo != 0) {
+                $('#erro').html('@Html.Partial("Utilities/Alert", new Alert() { type_color = TypesBootstrapColors.danger, title = "Campos dinâmico", text = "Descrição é um Campo obrigatório!" } ).ToString()');
+                //$("#passo").val('0');
+            }
+            else {
+                $("#passo").val('1');
+            }
+        }
+        $('.form-control-group .form-control').on('keyup change', function (e) {
+            var input = $(e.currentTarget);
+
+            if ($.trim(input.val()) !== '') {
+                input.addClass('dirty').removeClass('static');
+            } else {
+                input.removeClass('dirty').removeClass('static');
+            }
+        });
+
+        $('.form-control-group .form-control').each(function () {
+            var input = $(this);
+
+            if ($.trim(input.val()) !== '') {
+                input.addClass('static').addClass('dirty');
+            }
+        });
+
+        $('.form-horizontal .form-control').each(function () {
+            $(this).after('<div class="form-control-line"></div>');
+        });
+    }
+
+    function Remove(id) {
+        $("#" + id).remove();
+        var split = id.split("-");
+        var ind = parseInt(split[split.length - 1]);
+        var removed = String($("#hiddenRemoved").val()).replace("[").replace("]").replace(" ").split(",");
+        removed.push(String(ind));
+        $("#hiddenRemoved").val(removed);
+    }
+
+    $(document).ready(function () {
+        $("input[type=text]").keyup(function () {
+            var id = this.id;
+            if (id == "descricao") {
+                var passo = $("#passo").val();
+                if (this.value != "") {
+                    $('#erro').html("");
+                }
+                else {
+                    if (passo != 0) {
+                        $('#erro').html('@Html.Partial("Utilities/Alert", new Alert() { type_color = TypesBootstrapColors.danger, title = "Descrição", text = "Campo obrigatório!" } ).ToString()');
+                        $("#passo").val('0');
+                    }
+                    else {
+                        $("#passo").val('1');
+                    }
+                }
+            }
+        }).keyup();
+
+        $("button[id='btnAddCampo']").click(function (e) {
+            var count = parseInt(String($('#hiddenCount').val()));
+
+            $(document).ajaxStart(function () {
+                $('#loading').html('@Html.Partial("Loading")');
+            });
+
+            jQuery.ajax({
+                url: '@Url.Action("AddCampoDinamicoNovo", "ArquivoTipo")',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    'count': count
+                }),
+                dataType: "html",
+                success: function (result) {
+                    @*$('#formDynamic').html('@Html.Partial("Loading")'.replace('"', '\''));*@
+                }
+            }).done(function (data) {
+                $('#Campos').append(data);
+                $('#hiddenCount').val(String(parseInt(count) + 1));
+                $('#loading').html("");
+            });
+        });
+
+        $("#btnSubmit").click(function (e) {
+            var count = parseInt(String($('#hiddenCount').val()));
+            var removed = $("#hiddenRemoved").val();
+
+            $(document).ajaxStart(function () {
+                $('#loadingSave').html('@Html.Partial("Loading")');
+                $('#loading').html("");
+            });
+
+            var desc = document.getElementById("descricao").value;
+            var expo = document.getElementById("exporta").checked;
+            var id = @id;
+            if (desc == "") {
+                $('#erro').html('@Html.Partial("Utilities/Alert", new Alert() { type_color = TypesBootstrapColors.danger, title = "Descrição", text = "Campo obrigatório!" } ).ToString()');
+                $('#loadingSave').html("");
+                $('#loading').html("");
+                return;
+            }
+            else {
+                $('#erro').html("");
+            }
+
+            for (var x = 0; x < count; x++) {
+                if (removed.indexOf(x) == -1) {
+                    var dx = document.getElementById("descricao-" + String(x)).value;
+                    for (var y = 0; y < count; y++) {
+                        if (removed.indexOf(y) == -1) {
+                            if (x != y) {
+                                var dy = document.getElementById("descricao-" + String(y)).value;
+                                if (dx == dy) {
+                                    $('#erro').html('@Html.Partial("Utilities/Alert", new Alert() { type_color = TypesBootstrapColors.danger, title = "Campos Iguais", text = "Formulário não pode ter Campos com Descrição iguais!" } ).ToString()');
+                                    $('#loadingSave').html();
+                                    document.getElementById("descricao-" + String(x)).className = "erro form-control";
+                                    document.getElementById("descricao-" + String(y)).className = "erro form-control";
+                                    return;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            var json = "{ 'id': '" + id + "', " +
+                        " 'descricao': '" + desc + "', " +
+                        " 'exporta': " + expo + ", " +
+                        " 'campos': [";
+            for (var i = 0; i < count; i++) {
+                if (removed.indexOf(i) == -1) {
+                    var desc = document.getElementById("descricao-" + String(i));
+                    var split = $(desc).attr('name').split("-");
+                    var descI = split[0];
+                    var descricao = desc.value;
+
+                    var t = document.getElementById("tipo-" + String(i));
+                    //split = t.localName.split("-");
+                    //var tI = split[0];
+                    var tipo = t.options[t.selectedIndex].value;
+
+                    var obr = document.getElementById("obrigacao-" + String(i))
+                    //split = obr.localName.split("-");
+                    //var obriI = split[0];
+                    var obrigracao = obr.checked;
+                    var campo = "{  'CAMP_IND': '" + descI + "'," +
+                                "   'CAMP_DESCRICAO': '" + descricao + "'," +
+                                "   'CAMP_OBRIGATORIO': " + obrigracao + "," +
+                                "   'CAMP_TIPO': " + tipo +
+                                "},";
+                    json = json + campo;
+                }
+            }
+
+            json = json.substring(0, json.length - 1) + "]}";
+
+            jQuery.ajax({
+                url: '@Url.Action("SalvarDetail", "ArquivoTipo")',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ 'json': json }),
+                dataType: "html",
+                success: function (result) {
+                    @*$('#formDynamic').html('@Html.Partial("Loading")'.replace('"', '\''));*@
+                }
+            }).done(function (data) {
+                $('#Campos').append(data);
+                $('#hiddenCount').val(String(parseInt(count) + 1));
+                $('#loadingSave').html("");
+                $('#loading').html("");
+                window.location.href = data;
+            });
+        });
+    });
+</script>
+

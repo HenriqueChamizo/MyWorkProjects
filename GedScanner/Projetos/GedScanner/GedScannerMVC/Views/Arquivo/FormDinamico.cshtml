@@ -1,0 +1,89 @@
+﻿@using Model.Ged
+@model GedScannerMVC.ClassView.Listas
+@{ 
+    string hidden = "";
+}
+<form onsubmit="btnSubmitClick()">
+    <div style="max-height:1000px">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active">
+                @if (Model.campos != null && Model.campos.Count > 0)
+                {
+                    ArquivoTipo tipo = Model.campos[0].CAMP_ARQUIVOTIPO;
+                    <a class="text-info">
+                        @tipo.GEDTIPO_DESCRICAO
+                    </a>
+                }
+                else
+                {
+                    <a class="text-danger">
+                        Atenção!
+                    </a>
+                }
+            </li>
+        </ul>
+        @if (Model.campos != null && Model.campos.Count > 0)
+        {
+            <div class="col-sm-12"><br /></div>
+            foreach (Campo campo in Model.campos)
+            {
+                hidden = hidden + campo.CAMP_IND.ToString() + '-' + campo.CAMP_DESCRICAO + ",";
+                CampoValor valor = null;
+                bool valorIsNull = true;
+                if (Model.valores != null && Model.valores.Count > 0)
+                {
+                    valor = Model.valores.Find(f => f.CAPVAL_CAMPO == campo.CAMP_IND);
+                    if (valor != null)
+                    {
+                        valorIsNull = false;
+                    }
+                    else
+                    {
+                        valorIsNull = true;
+                    }
+                }
+
+                <div class="@(campo.CAMP_TIPO.CAPTIP_DESCRICAO == "Texto" ? "col-sm-12" : "col-sm-6")">
+                    <div class="form-group@(campo.CAMP_TIPO.CAPTIP_DESCRICAO == "Data" ? "" : " floating-label")" id="@(campo.CAMP_IND.ToString() + "-" + campo.CAMP_DESCRICAO + "-div")">
+                        <input type="@(campo.CAMP_TIPO.CAPTIP_DESCRICAO == "Texto" ? "text" :
+                                            campo.CAMP_TIPO.CAPTIP_DESCRICAO == "Data" ? "date" : "number")"
+                               class="form-control@(campo.CAMP_OBRIGATORIO ? " required" : "")" name="@(campo.CAMP_IND.ToString() + '-' + campo.CAMP_DESCRICAO)" 
+                               id="@(campo.CAMP_IND.ToString() + '-' + campo.CAMP_DESCRICAO)"
+                               value="@(!valorIsNull ? valor.CAPVAL_VALOR : "" )" required
+                        @*onkeyup="OnKeyUp('@(campo.CAMP_IND.ToString() + '-' + campo.CAMP_DESCRICAO)')"*@ />
+                        @*OnKeyUpValidation('@(campo.CAMP_IND.ToString() + '-' + campo.CAMP_DESCRICAO)',
+                        '@(campo.CAMP_IND.ToString() + "-" + campo.CAMP_DESCRICAO + "-div")',
+                        'loadingSave', 'hiddenCount', 'erro')*@
+                        <label for="@(campo.CAMP_IND.ToString() + '-' + campo.CAMP_DESCRICAO)">@campo.CAMP_DESCRICAO</label>
+                    </div>
+                </div>
+            }
+            hidden = hidden.Substring(0, hidden.Length - 1);
+        }
+        else
+        {
+            <div class="col-sm-12">
+                <h3 class="h3 text-warning">Tipo de Arquivo selecionado não tem campos cadastrados, cadastre os campos para continuar a classificação!</h3>
+            </div>
+        }
+        <div class="col-sm-12">
+            <br />
+            <script>
+                LoadInputs();
+                autoCompleteOff();
+            </script>
+        </div>
+        <div class="col-sm-12" style="min-height:35px">
+            <div style="text-align:right">
+                @*<button type="button" class="btn btn-default" id="btnSubmit" onclick="btnSubmitClick()">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
+                </button>*@
+                <button type="submit" class="btn btn-default" id="btnSubmit">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
+                </button>
+                <input type="hidden" name="hiddenIndices" id="hiddenIndices" value="@hidden" />
+                <input type="hidden" name="hiddenCount" id="hiddenCount" value="0" />@*@Model.campos.Count()*@
+            </div>
+        </div>
+    </div>
+</form>

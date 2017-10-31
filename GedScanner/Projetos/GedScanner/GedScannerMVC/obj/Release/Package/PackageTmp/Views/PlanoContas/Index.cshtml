@@ -1,0 +1,93 @@
+﻿@using GedScannerMVC.ClassView
+@model PlanoContas
+@{
+    ViewBag.Title = "Plano de Contas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    @Html.Partial("_HeaderGeral", new _HeaderGeral() { imageSrc = "~/Image/Paginas/PlanoContas-Gray.png", title = "Plano de Contas", TitlePageSmall = null })
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="box box-primary">
+                @using (Html.BeginForm("Salvar", "PlanoContas", FormMethod.Post, new { role = "form" }))
+                {
+                    @Html.ValidationSummary(true)
+                    <div class="box-header with-border">
+                        <label id="lblPlanoIndice" class="h3 left">@Model.indice</label>
+                        <input id="indice" name="indice" type="hidden" value="@Model.indice" />
+                    </div>
+                    <div class="box-body">
+                        <div id="PlanoAtual">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                <input id="txtcodigo" class="form-control" type="text" name="txtcodigo" value="@Model.codigo" disabled="disabled" />
+                                                <label id="lblCodigo" for="txtcodigo">Código</label>
+                                                <input id="codigo" name="codigo" type="hidden" value="@Model.codigo" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                <input id="descricao" class="form-control" type="text" name="descricao" value="@Model.descricao" />
+                                                <label id="lblDescricao" for="descricao">Descrição</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                <input id="txtdatainicio" class="form-control" type="text" name="txtdatainicio" value="@Model.datainicio" disabled="disabled" />
+                                                <label id="lblDatainicio" for="txtdatainicio">Data de Criação</label>
+                                                <input id="datainicio" name="datainicio" type="hidden" value="@Model.datainicio" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            @if (Model.ckbFinalizarVisible)
+                                            {
+                                                <div class="form-group floating-label">
+                                                    <div class="checkbox checkbox-inline checkbox-styled">
+                                                        <label id="lblfinalizar" onclick="finalizarclick()">
+                                                            <input type="checkbox" id="ckbfinalizar" name="ckbfinalizar" class="minimal" value="@(Convert.ToBoolean(Model.finalizar) ? "true" : "false")"
+                                                                   @(Convert.ToBoolean(Model.finalizar) ? "checked" : "") onclick="finalizarclick('ckbfinalizar', 'finalizar')" />
+                                                            @(" Finalizar Plano de Contas")
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <input type="hidden" value="" name="finalizar" id="finalizar" />
+                                                <script>
+                                                    function finalizarclick() {
+                                                        var var1 = $('#ckbfinalizar');
+                                                        var var2 = var1.val() == 'false';
+                                                        var var3 = String(var2);
+                                                        $('#finalizar').val(var3);
+                                                    };
+                                                </script>
+                                            }
+                                            <input id="edit" name="edit" type="hidden" value="@Model.ckbFinalizarVisible.ToString()" />
+                                        </div>
+                                        <div class="col-md-12"><br /></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="min-height: 35px;text-align:right">
+                                    <input id="btnSalvar" type="submit" value="Salvar" class="btn btn-default" />
+                                    <label id="lblErro" style="color:red">@Model.Erro</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-sm-12"><br /></div>
+        <div class="col-sm-12">
+            @Html.Partial("Table", Model.tableModel)
+        </div>
+    </div>
+</section>
+
+
+

@@ -1,0 +1,1669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Projetos\SemTeamFundation\GedScanner\FTP\ged</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Code/Common.cs">
+      <publishTime>09/18/2016 16:32:20</publishTime>
+    </File>
+    <File Include="App_Code/ProductInfo.cs">
+      <publishTime>09/18/2016 16:32:18</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Aspose.Pdf.dll">
+      <publishTime>02/01/2017 10:28:22</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>03/24/2017 16:48:23</publishTime>
+    </File>
+    <File Include="bin/DAO.dll">
+      <publishTime>03/24/2017 16:48:23</publishTime>
+    </File>
+    <File Include="bin/GedScannerMVC.dll">
+      <publishTime>03/24/2017 17:12:15</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>10/10/2016 06:51:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/09/2016 21:37:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/13/2016 03:10:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Model.dll">
+      <publishTime>03/24/2017 16:48:22</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/13/2016 23:06:14</publishTime>
+    </File>
+    <File Include="bin/Persits.PDF.dll">
+      <publishTime>07/20/2016 15:41:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap-theme.css">
+      <publishTime>02/01/2017 11:25:06</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>02/01/2017 11:25:06</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap-theme.min.css.map">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap-toggle.css">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap.css">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap.css.map">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap.min.css">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap.min.css.map">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/js/bootstrap.js">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/js/bootstrap.min.js">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="bootstrap/js/npm.js">
+      <publishTime>02/01/2017 11:25:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="ExtraActions/csharp.aspx">
+      <publishTime>07/27/2016 05:48:49</publishTime>
+    </File>
+    <File Include="ExtraActions/SaveToDB.aspx">
+      <publishTime>02/21/2017 14:02:32</publishTime>
+    </File>
+    <File Include="ExtraActions/SaveToFile.aspx">
+      <publishTime>09/18/2016 16:31:54</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/31/2017 09:29:23</publishTime>
+    </File>
+    <File Include="Image/Background/1.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Sair-black.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Sair-color.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Sair-gray.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Sair-white.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Sair.psd">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca-black.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca-color.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca-gray.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca-white.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca.psd">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca2-black.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca2-color.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca2-gray.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca2-white.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Eventos/Troca2.psd">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/loading-black.gif">
+      <publishTime>03/21/2017 13:51:22</publishTime>
+    </File>
+    <File Include="Image/loading-gray.gif">
+      <publishTime>03/21/2017 13:51:23</publishTime>
+    </File>
+    <File Include="Image/loading-white.gif">
+      <publishTime>03/21/2017 13:51:23</publishTime>
+    </File>
+    <File Include="Image/loading.gif">
+      <publishTime>03/21/2017 13:51:23</publishTime>
+    </File>
+    <File Include="Image/loading.psd">
+      <publishTime>03/21/2017 13:51:22</publishTime>
+    </File>
+    <File Include="Image/Logo/assecont.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/folha-gray-black.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/folha-gray-white.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/folha-so-black.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/folha-so-gray.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/folha-so-white.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/folha-so.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/folha.old.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/folha.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/folha.psd">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1-gray-black.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1-red.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1-so-black.png">
+      <publishTime>01/31/2017 09:49:48</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1-so-gray.png">
+      <publishTime>01/31/2017 09:49:49</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1-so-red.png">
+      <publishTime>01/31/2017 09:49:49</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1-so-white.png">
+      <publishTime>01/31/2017 09:49:49</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1-so.png">
+      <publishTime>01/31/2017 09:49:49</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1-so.psd">
+      <publishTime>01/31/2017 09:49:49</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1.old.png">
+      <publishTime>01/31/2017 09:49:49</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1.png">
+      <publishTime>01/31/2017 09:49:49</publishTime>
+    </File>
+    <File Include="Image/Logo/ged1.psd">
+      <publishTime>01/31/2017 09:49:49</publishTime>
+    </File>
+    <File Include="Image/Paginas/Arquivo-gray.png">
+      <publishTime>03/22/2017 10:18:12</publishTime>
+    </File>
+    <File Include="Image/Paginas/Arquivo.psd">
+      <publishTime>03/22/2017 10:18:12</publishTime>
+    </File>
+    <File Include="Image/Paginas/Conta-gray.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/Conta.psd">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/Contas-amarelo-gray.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/Contas-amarelo.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/Contas-rosa-gray.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/Contas-rosa.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/detail.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/Detail.psd">
+      <publishTime>02/17/2017 16:14:06</publishTime>
+    </File>
+    <File Include="Image/Paginas/Lote-gray-detail.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/Lote-gray.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/Lote.psd">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/PlanoContas-color.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/PlanoContas-Gray.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/PlanoContas.psd">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/TipoArquivo-color.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/TipoArquivo-gray.png">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Image/Paginas/TipoArquivo.psd">
+      <publishTime>02/17/2017 16:14:08</publishTime>
+    </File>
+    <File Include="Images/adtopbackground.gif">
+      <publishTime>09/18/2016 16:33:42</publishTime>
+    </File>
+    <File Include="Images/arrow-down.gif">
+      <publishTime>09/18/2016 16:33:42</publishTime>
+    </File>
+    <File Include="Images/arrow.gif">
+      <publishTime>09/18/2016 16:33:40</publishTime>
+    </File>
+    <File Include="Images/background.gif">
+      <publishTime>09/18/2016 16:33:40</publishTime>
+    </File>
+    <File Include="Images/bg_menubar_black.png">
+      <publishTime>09/18/2016 16:33:40</publishTime>
+    </File>
+    <File Include="Images/blank.gif">
+      <publishTime>09/18/2016 16:33:38</publishTime>
+    </File>
+    <File Include="Images/bottomleft.gif">
+      <publishTime>09/18/2016 16:33:38</publishTime>
+    </File>
+    <File Include="Images/bottommid.gif">
+      <publishTime>09/18/2016 16:33:38</publishTime>
+    </File>
+    <File Include="Images/bottomright.gif">
+      <publishTime>09/18/2016 16:33:38</publishTime>
+    </File>
+    <File Include="Images/btn-down-install-plugin.gif">
+      <publishTime>09/18/2016 16:33:36</publishTime>
+    </File>
+    <File Include="Images/btn-install-plugin.gif">
+      <publishTime>09/18/2016 16:33:36</publishTime>
+    </File>
+    <File Include="Images/ChangeSize.png">
+      <publishTime>09/18/2016 16:33:36</publishTime>
+    </File>
+    <File Include="Images/ckground.gif">
+      <publishTime>09/18/2016 16:33:34</publishTime>
+    </File>
+    <File Include="Images/Code-128.png">
+      <publishTime>10/24/2016 15:12:20</publishTime>
+    </File>
+    <File Include="Images/Code-128_hover.png">
+      <publishTime>09/18/2016 16:33:34</publishTime>
+    </File>
+    <File Include="Images/code-39.png">
+      <publishTime>09/18/2016 16:33:34</publishTime>
+    </File>
+    <File Include="Images/code-39_hover.png">
+      <publishTime>09/18/2016 16:33:32</publishTime>
+    </File>
+    <File Include="Images/Crop.png">
+      <publishTime>09/18/2016 16:33:32</publishTime>
+    </File>
+    <File Include="Images/Crop_gray.png">
+      <publishTime>09/18/2016 16:33:30</publishTime>
+    </File>
+    <File Include="Images/document engine logo.png">
+      <publishTime>09/18/2016 16:33:30</publishTime>
+    </File>
+    <File Include="Images/Download.png">
+      <publishTime>09/18/2016 16:33:28</publishTime>
+    </File>
+    <File Include="Images/DWC icon logo.png">
+      <publishTime>09/18/2016 16:33:28</publishTime>
+    </File>
+    <File Include="Images/DWT icon logo.png">
+      <publishTime>09/18/2016 16:33:28</publishTime>
+    </File>
+    <File Include="Images/DW_Logo.png">
+      <publishTime>09/18/2016 16:33:28</publishTime>
+    </File>
+    <File Include="Images/faq 16.png">
+      <publishTime>09/18/2016 16:33:26</publishTime>
+    </File>
+    <File Include="Images/Flip.png">
+      <publishTime>09/18/2016 16:33:26</publishTime>
+    </File>
+    <File Include="Images/icn-circle-shares.jpg">
+      <publishTime>09/18/2016 16:33:24</publishTime>
+    </File>
+    <File Include="Images/icn-down-12x7.png">
+      <publishTime>09/18/2016 16:33:22</publishTime>
+    </File>
+    <File Include="Images/icn-phone-12x12.png">
+      <publishTime>09/18/2016 16:33:24</publishTime>
+    </File>
+    <File Include="Images/icn-phone-num-13x13.png">
+      <publishTime>09/18/2016 16:33:20</publishTime>
+    </File>
+    <File Include="Images/icn-trigon-12x6.png">
+      <publishTime>09/18/2016 16:33:20</publishTime>
+    </File>
+    <File Include="Images/icn-up-12x7.png">
+      <publishTime>09/18/2016 16:33:20</publishTime>
+    </File>
+    <File Include="Images/icon_associate1.png">
+      <publishTime>09/18/2016 16:33:20</publishTime>
+    </File>
+    <File Include="Images/icon_associate2.png">
+      <publishTime>09/18/2016 16:33:18</publishTime>
+    </File>
+    <File Include="Images/icon_associate3.png">
+      <publishTime>09/18/2016 16:33:18</publishTime>
+    </File>
+    <File Include="Images/icon_livehelp_mail.png">
+      <publishTime>09/18/2016 16:33:18</publishTime>
+    </File>
+    <File Include="Images/ICS icon logo.png">
+      <publishTime>09/18/2016 16:33:18</publishTime>
+    </File>
+    <File Include="Images/img-livechat-83x15.png">
+      <publishTime>09/18/2016 16:33:16</publishTime>
+    </File>
+    <File Include="Images/img-onlineDemo-126x21.png">
+      <publishTime>09/18/2016 16:33:16</publishTime>
+    </File>
+    <File Include="Images/loading.gif">
+      <publishTime>09/18/2016 16:33:16</publishTime>
+    </File>
+    <File Include="Images/logo-dwt-68x68.png">
+      <publishTime>09/18/2016 16:33:14</publishTime>
+    </File>
+    <File Include="Images/logo.gif">
+      <publishTime>09/18/2016 16:33:12</publishTime>
+    </File>
+    <File Include="Images/Mirror.png">
+      <publishTime>09/18/2016 16:33:12</publishTime>
+    </File>
+    <File Include="Images/qrcode.png">
+      <publishTime>09/18/2016 16:33:14</publishTime>
+    </File>
+    <File Include="Images/qrcode_hover.png">
+      <publishTime>09/18/2016 16:33:10</publishTime>
+    </File>
+    <File Include="Images/RemoveAllImages.png">
+      <publishTime>09/18/2016 16:33:10</publishTime>
+    </File>
+    <File Include="Images/RemoveSelectedImages.png">
+      <publishTime>09/18/2016 16:33:08</publishTime>
+    </File>
+    <File Include="Images/Rotate180.png">
+      <publishTime>09/18/2016 16:33:08</publishTime>
+    </File>
+    <File Include="Images/RotateLeft.png">
+      <publishTime>09/18/2016 16:33:08</publishTime>
+    </File>
+    <File Include="Images/RotateRight.png">
+      <publishTime>09/18/2016 16:33:08</publishTime>
+    </File>
+    <File Include="Images/sc-desktop-only.png">
+      <publishTime>09/18/2016 16:33:06</publishTime>
+    </File>
+    <File Include="Images/ShowEditor.png">
+      <publishTime>09/18/2016 16:33:04</publishTime>
+    </File>
+    <File Include="Images/Thumbs.db">
+      <publishTime>09/18/2016 16:33:02</publishTime>
+    </File>
+    <File Include="Images/topbackground.gif">
+      <publishTime>09/18/2016 16:32:56</publishTime>
+    </File>
+    <File Include="Images/twain_associate.pdf">
+      <publishTime>09/18/2016 16:32:54</publishTime>
+    </File>
+    <File Include="Images/twain_associate1.png">
+      <publishTime>09/18/2016 16:32:40</publishTime>
+    </File>
+    <File Include="Images/twain_associate2.png">
+      <publishTime>09/18/2016 16:33:06</publishTime>
+    </File>
+    <File Include="Images/twain_associate3.png">
+      <publishTime>09/18/2016 16:32:34</publishTime>
+    </File>
+    <File Include="Images/UPC-A.png">
+      <publishTime>09/18/2016 16:32:30</publishTime>
+    </File>
+    <File Include="Images/UPC-A_hover.png">
+      <publishTime>09/18/2016 16:32:26</publishTime>
+    </File>
+    <File Include="Images/wait.gif">
+      <publishTime>09/18/2016 16:32:34</publishTime>
+    </File>
+    <File Include="includes/PageHead.aspx">
+      <publishTime>09/18/2016 16:33:44</publishTime>
+    </File>
+    <File Include="includes/PageTail.aspx">
+      <publishTime>01/04/2017 13:41:48</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/22/2017 13:26:23</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>02/07/2017 10:20:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.3.min.js">
+      <publishTime>03/22/2017 13:29:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>02/07/2017 10:20:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>02/07/2017 10:20:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>02/07/2017 10:20:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>02/07/2017 10:20:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>02/07/2017 10:20:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>02/07/2017 10:20:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.elevateZoom-3.0.8.min.js">
+      <publishTime>03/22/2017 13:29:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.elevatezoom.js">
+      <publishTime>03/22/2017 13:29:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.js">
+      <publishTime>09/18/2016 16:45:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>02/24/2017 10:52:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>02/24/2017 10:52:37</publishTime>
+    </File>
+    <File Include="Scripts/Login.hcc.js">
+      <publishTime>01/31/2017 09:49:36</publishTime>
+    </File>
+    <File Include="Scripts/online_demo_initpage.js">
+      <publishTime>03/17/2017 15:07:42</publishTime>
+    </File>
+    <File Include="Scripts/online_demo_operation.js">
+      <publishTime>03/17/2017 15:03:12</publishTime>
+    </File>
+    <File Include="Scripts/PageMenu.js">
+      <publishTime>10/25/2016 15:30:06</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/Barcode.zip">
+      <publishTime>10/18/2016 00:51:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/Barcodex64.zip">
+      <publishTime>10/18/2016 00:51:16</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/dynamsoft.webtwain.addon.barcode.intellisense.nonvs.js">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/dynamsoft.webtwain.addon.barcode.js">
+      <publishTime>12/07/2016 06:22:32</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/dynamsoft.webtwain.addon.ibm.js">
+      <publishTime>12/07/2016 06:22:31</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/dynamsoft.webtwain.addon.ocr.intellisense.nonvs.js">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/dynamsoft.webtwain.addon.ocr.js">
+      <publishTime>12/07/2016 06:22:32</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/dynamsoft.webtwain.addon.ocrpro.js">
+      <publishTime>12/07/2016 06:22:32</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/dynamsoft.webtwain.addon.pdf.intellisense.nonvs.js">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/dynamsoft.webtwain.addon.webcam.intellisense.nonvs.js">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/dynamsoft.webtwain.addon.webcam.js">
+      <publishTime>12/07/2016 06:22:31</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/MacBarcode.zip">
+      <publishTime>06/23/2016 04:34:10</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/Pdf.zip">
+      <publishTime>01/20/2016 00:47:54</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/Pdfx64.zip">
+      <publishTime>01/20/2016 00:47:46</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/Webcam.zip">
+      <publishTime>10/18/2016 01:03:34</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/addon/Webcamx64.zip">
+      <publishTime>10/18/2016 01:03:38</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/DynamicWebTWAIN.cab">
+      <publishTime>10/31/2016 06:26:30</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/DynamicWebTWAINActiveX.exe">
+      <publishTime>10/31/2016 07:25:24</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/DynamicWebTWAINHTML5Edition.exe">
+      <publishTime>10/28/2016 06:33:34</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/DynamicWebTWAINHTML5MACTrialEdition.pkg">
+      <publishTime>10/20/2016 01:22:54</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/DynamicWebTWAINMacEdition.pkg">
+      <publishTime>08/30/2015 22:59:00</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/DynamicWebTWAINPlugIn.msi">
+      <publishTime>08/31/2015 00:28:00</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/DynamicWebTWAINx64.cab">
+      <publishTime>10/31/2016 06:26:30</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/dynamic_web_twainx64.deb">
+      <publishTime>10/20/2016 04:49:16</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/dynamic_web_twainx64.rpm">
+      <publishTime>10/20/2016 04:49:16</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/dynamsoft.webtwain.config.js">
+      <publishTime>03/16/2017 13:45:24</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/dynamsoft.webtwain.initiate.js">
+      <publishTime>12/07/2016 07:08:29</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/dynamsoft.webtwain.install.js">
+      <publishTime>02/15/2017 16:47:46</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/dynamsoft.webtwain.intellisense.nonvs.js">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/MSI/DynamicWebTWAINHTML5Edition.msi">
+      <publishTime>10/28/2016 06:33:28</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/MSI/WebTwainMSITrialX64.msi">
+      <publishTime>10/31/2016 06:56:44</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/MSI/WebTwainMSITrialX86.msi">
+      <publishTime>10/31/2016 06:56:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/btn-download.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/hint.css">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/html5_editor.css">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/changeimagesize.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/close.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/crop.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/crop_grey.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/deskew.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/fit.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/fith.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/fitw.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/flip.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/fullscreen.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/hand.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/img.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/mirror.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/next.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/next_grey.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/originalsize.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/plug-in-blocked.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/previous.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/previous_grey.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/print.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/rectselect.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/remove.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/restore.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/rotate.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/rotate180.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/rotateleft.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/rotateright.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/rot_left90.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/rot_right90.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/save.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/ShowEditor.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/stretch.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/zoom.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/zoomin.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/zoomin_grey.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/zoomout.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/imgs/zoomout_grey.png">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/LICENSE">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/loading.gif">
+      <publishTime>12/07/2016 06:20:36</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old/reference/logo.gif">
+      <publishTime>02/15/2017 16:41:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/Barcode.zip">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/Barcodex64.zip">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/dynamsoft.webtwain.addon.barcode.intellisense.nonvs.js">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/dynamsoft.webtwain.addon.barcode.js">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/dynamsoft.webtwain.addon.pdf.intellisense.nonvs.js">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/dynamsoft.webtwain.addon.pdf.js">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/dynamsoft.webtwain.addon.webcam.intellisense.nonvs.js">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/dynamsoft.webtwain.addon.webcam.js">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/MacBarcode.zip">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/Pdf.zip">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/Pdfx64.zip">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/Webcam.zip">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/addon/Webcamx64.zip">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/DynamicWebTWAIN.cab">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/DynamicWebTWAINActiveX.exe">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/DynamicWebTWAINHTML5Edition.exe">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/DynamicWebTWAINHTML5MACTrialEdition.pkg">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/DynamicWebTWAINMacEdition.pkg">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/DynamicWebTWAINPlugIn.msi">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/DynamicWebTWAINx64.cab">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/dynamic_web_twainx64.deb">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/dynamic_web_twainx64.rpm">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/dynamsoft.webtwain.config.js">
+      <publishTime>03/17/2017 14:09:24</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/dynamsoft.webtwain.initiate.js">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/dynamsoft.webtwain.install.js">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/dynamsoft.webtwain.intellisense.nonvs.js">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/MSI/DynamicWebTWAINHTML5Edition.msi">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/MSI/WebTwainMSITrialX64.msi">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/MSI/WebTwainMSITrialX86.msi">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/btn-download.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/hint.css">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/html5_editor.css">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/changeimagesize.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/close.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/crop.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/crop_grey.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/deskew.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/fit.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/fith.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/fitw.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/flip.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/hand.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/img.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/mirror.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/next.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/next_grey.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/originalsize.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/plug-in-blocked.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/previous.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/previous_grey.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/print.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/rectselect.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/restore.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/rotate.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/rotateleft.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/rotateright.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/save.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/stretch.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/zoom.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/zoomin.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/zoomin_grey.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/zoomout.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/imgs/zoomout_grey.png">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/LICENSE">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/loading.gif">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old2/reference/logo.gif">
+      <publishTime>03/16/2017 14:54:25</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/Barcode.zip">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/Barcodex64.zip">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/dynamsoft.webtwain.addon.barcode.intellisense.nonvs.js">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/dynamsoft.webtwain.addon.barcode.js">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/dynamsoft.webtwain.addon.pdf.intellisense.nonvs.js">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/dynamsoft.webtwain.addon.pdf.js">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/dynamsoft.webtwain.addon.webcam.intellisense.nonvs.js">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/dynamsoft.webtwain.addon.webcam.js">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/MacBarcode.zip">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/Pdf.zip">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/Pdfx64.zip">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/Webcam.zip">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/addon/Webcamx64.zip">
+      <publishTime>03/17/2017 14:52:12</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/DynamicWebTWAIN.cab">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/DynamicWebTWAINActiveX.exe">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/DynamicWebTWAINHTML5Edition.exe">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/DynamicWebTWAINHTML5MACTrialEdition.pkg">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/DynamicWebTWAINMacEdition.pkg">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/DynamicWebTWAINPlugIn.msi">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/DynamicWebTWAINx64.cab">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/dynamic_web_twainx64.deb">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/dynamic_web_twainx64.rpm">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/dynamsoft.webtwain.config.js">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/dynamsoft.webtwain.initiate.js">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/dynamsoft.webtwain.install.js">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/dynamsoft.webtwain.intellisense.nonvs.js">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/MSI/DynamicWebTWAINHTML5Edition.msi">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/MSI/WebTwainMSITrialX64.msi">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/MSI/WebTwainMSITrialX86.msi">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/btn-download.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/hint.css">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/html5_editor.css">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/changeimagesize.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/close.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/crop.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/crop_grey.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/deskew.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/fit.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/fith.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/fitw.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/flip.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/hand.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/img.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/mirror.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/next.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/next_grey.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/originalsize.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/plug-in-blocked.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/previous.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/previous_grey.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/print.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/rectselect.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/restore.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/rotate.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/rotateleft.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/rotateright.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/save.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/stretch.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/zoom.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/zoomin.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/zoomin_grey.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/zoomout.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/imgs/zoomout_grey.png">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/LICENSE">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/loading.gif">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources.old3/reference/logo.gif">
+      <publishTime>03/17/2017 14:52:13</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/Barcode.zip">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/Barcodex64.zip">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.barcode.intellisense.nonvs.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.barcode.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.ibm.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.ocr.intellisense.nonvs.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.ocr.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.ocrpro.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.pdf.intellisense.nonvs.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.pdf.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.webcam.intellisense.nonvs.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/dynamsoft.webtwain.addon.webcam.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/MacBarcode.zip">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/Pdf.zip">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/Pdfx64.zip">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/Webcam.zip">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/addon/Webcamx64.zip">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/DynamicWebTWAIN.cab">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/DynamicWebTWAINActiveX.exe">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/DynamicWebTWAINHTML5Edition.exe">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/DynamicWebTWAINHTML5MACTrialEdition.pkg">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/DynamicWebTWAINMacEdition.pkg">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/DynamicWebTWAINPlugIn.msi">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/DynamicWebTWAINx64.cab">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/dynamic_web_twainx64.deb">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/dynamic_web_twainx64.rpm">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/dynamsoft.webtwain.config.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/dynamsoft.webtwain.initiate.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/dynamsoft.webtwain.install.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/dynamsoft.webtwain.intellisense.nonvs.js">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/MSI/DynamicWebTWAINHTML5Edition.msi">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/MSI/WebTwainMSITrialX64.msi">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/MSI/WebTwainMSITrialX86.msi">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/btn-download.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/hint.css">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/html5_editor.css">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/changeimagesize.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/close.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/crop.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/crop_grey.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/deskew.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/fit.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/fith.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/fitw.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/flip.png">
+      <publishTime>03/17/2017 15:23:42</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/fullscreen.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/hand.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/img.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/mirror.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/next.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/next_grey.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/originalsize.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/plug-in-blocked.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/previous.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/previous_grey.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/print.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/rectselect.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/remove.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/restore.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/rotate.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/rotate180.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/rotateleft.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/rotateright.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/rot_left90.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/rot_right90.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/save.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/ShowEditor.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/stretch.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/zoom.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/zoomin.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/zoomin_grey.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/zoomout.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/imgs/zoomout_grey.png">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/LICENSE">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/loading.gif">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/Resources/reference/logo.gif">
+      <publishTime>03/17/2017 15:23:43</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>07/27/2016 04:21:18</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>07/27/2016 04:21:18</publishTime>
+    </File>
+    <File Include="Scripts/TableofWeb.Angular.hcc.js">
+      <publishTime>02/08/2017 15:32:52</publishTime>
+    </File>
+    <File Include="Styles/Login.hcc.css">
+      <publishTime>03/20/2017 16:53:42</publishTime>
+    </File>
+    <File Include="Styles/Master.hcc.css">
+      <publishTime>02/17/2017 15:29:23</publishTime>
+    </File>
+    <File Include="Styles/Material-Switch.hcc.css">
+      <publishTime>01/31/2017 09:38:57</publishTime>
+    </File>
+    <File Include="Styles/Structure.hcc.css">
+      <publishTime>01/31/2017 09:38:57</publishTime>
+    </File>
+    <File Include="Styles/Structure.table.hcc.css">
+      <publishTime>01/31/2017 09:38:57</publishTime>
+    </File>
+    <File Include="Styles/style.css">
+      <publishTime>03/03/2017 09:32:44</publishTime>
+    </File>
+    <File Include="Styles/Themes.hcc.css">
+      <publishTime>01/31/2017 09:38:57</publishTime>
+    </File>
+    <File Include="Views/Arquivo/Detail.cshtml">
+      <publishTime>03/23/2017 11:06:06</publishTime>
+    </File>
+    <File Include="Views/Arquivo/FormDinamico.cshtml">
+      <publishTime>03/21/2017 16:37:14</publishTime>
+    </File>
+    <File Include="Views/Arquivo/Index.cshtml">
+      <publishTime>02/22/2017 16:14:31</publishTime>
+    </File>
+    <File Include="Views/Arquivo/Novo.cshtml">
+      <publishTime>03/17/2017 16:26:50</publishTime>
+    </File>
+    <File Include="Views/Arquivo/Teste.cshtml">
+      <publishTime>03/17/2017 09:46:17</publishTime>
+    </File>
+    <File Include="Views/ArquivoTipo/CamposDinamico.cshtml">
+      <publishTime>03/24/2017 11:06:34</publishTime>
+    </File>
+    <File Include="Views/ArquivoTipo/Detail.cshtml">
+      <publishTime>03/22/2017 16:20:35</publishTime>
+    </File>
+    <File Include="Views/ArquivoTipo/Index.cshtml">
+      <publishTime>03/23/2017 11:30:48</publishTime>
+    </File>
+    <File Include="Views/ArquivoTipo/Novo.cshtml">
+      <publishTime>03/24/2017 16:25:52</publishTime>
+    </File>
+    <File Include="Views/Conta/Index.cshtml">
+      <publishTime>02/14/2017 15:52:13</publishTime>
+    </File>
+    <File Include="Views/Conta/_Header.cshtml">
+      <publishTime>03/10/2017 09:26:20</publishTime>
+    </File>
+    <File Include="Views/Geral/Index.cshtml">
+      <publishTime>02/01/2017 10:15:21</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>03/10/2017 16:51:08</publishTime>
+    </File>
+    <File Include="Views/Lote/Arquivo.cshtml">
+      <publishTime>03/17/2017 16:01:01</publishTime>
+    </File>
+    <File Include="Views/Lote/Detail.cshtml">
+      <publishTime>03/10/2017 16:41:06</publishTime>
+    </File>
+    <File Include="Views/Lote/Index.cshtml">
+      <publishTime>03/09/2017 15:02:10</publishTime>
+    </File>
+    <File Include="Views/Lote/Lote.cshtml">
+      <publishTime>02/23/2017 10:35:42</publishTime>
+    </File>
+    <File Include="Views/Lote/LoteArquivo.cshtml">
+      <publishTime>02/23/2017 11:27:07</publishTime>
+    </File>
+    <File Include="Views/PlanoContas/Index.cshtml">
+      <publishTime>03/09/2017 15:00:07</publishTime>
+    </File>
+    <File Include="Views/PlanoContas/Plano.cshtml">
+      <publishTime>03/09/2017 15:01:05</publishTime>
+    </File>
+    <File Include="Views/Shared/ClienteAtual.cshtml">
+      <publishTime>02/01/2017 13:37:29</publishTime>
+    </File>
+    <File Include="Views/Shared/DiaAtual.cshtml">
+      <publishTime>02/01/2017 13:37:31</publishTime>
+    </File>
+    <File Include="Views/Shared/Exception.cshtml">
+      <publishTime>03/02/2017 14:51:18</publishTime>
+    </File>
+    <File Include="Views/Shared/Loading.cshtml">
+      <publishTime>03/23/2017 11:19:44</publishTime>
+    </File>
+    <File Include="Views/Shared/TableOfWeb.cshtml">
+      <publishTime>02/21/2017 11:21:41</publishTime>
+    </File>
+    <File Include="Views/Shared/UserAtual.cshtml">
+      <publishTime>02/01/2017 13:40:15</publishTime>
+    </File>
+    <File Include="Views/Shared/_HeaderGeral.cshtml">
+      <publishTime>03/10/2017 09:24:03</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/22/2017 16:55:52</publishTime>
+    </File>
+    <File Include="Views/Teste/Index.cshtml">
+      <publishTime>02/15/2017 13:22:42</publishTime>
+    </File>
+    <File Include="Views/Teste/Online.cshtml">
+      <publishTime>02/16/2017 11:23:29</publishTime>
+    </File>
+    <File Include="Views/Teste/PDF.cshtml">
+      <publishTime>02/24/2017 10:49:25</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>01/31/2017 09:29:23</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>01/31/2017 09:29:23</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/24/2017 17:12:17</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

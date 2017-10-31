@@ -1,0 +1,314 @@
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe.config
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.rsp
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.exe
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.rsp
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.AppContext.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Collections.Immutable.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Reflection.Metadata.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe.config
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.rsp
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe.config
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll.config
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.pdb
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\WebGrease.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.pdb
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.pdb
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.pdb
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.pdb
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.xml
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.xml
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.xml
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.xml
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.xml
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.xml
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.xml
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.xml
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe.config
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.rsp
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.exe
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.rsp
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.AppContext.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Collections.Immutable.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe.config
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.rsp
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe.config
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll.config
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\itextsharp.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Persits.PDF.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\WebGrease.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\itextsharp.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.xml
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.csprojResolveAssemblyReference.cache
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe.config
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.rsp
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.exe
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.rsp
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.AppContext.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Collections.Immutable.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe.config
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.rsp
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe.config
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll.config
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\itextsharp.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\WebGrease.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.csprojResolveAssemblyReference.cache
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.Apps.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.Apps.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\itextsharp.xml
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.xml
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.xml
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.xml
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.xml
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.xml
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.xml
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.xml
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe.config
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.rsp
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.exe
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.rsp
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.AppContext.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Collections.Immutable.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Reflection.Metadata.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe.config
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.rsp
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe.config
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll.config
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\itextsharp.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\WebGrease.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\itextsharp.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.xml
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.csprojResolveAssemblyReference.cache
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.exe.config
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csc.rsp
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.exe
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\csi.rsp
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.AppContext.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.exe.config
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\vbc.rsp
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll.config
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\GedScannerMVC.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\itextsharp.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\WebGrease.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\BLL.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\DAO.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Model.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Antlr3.Runtime.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\itextsharp.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\Newtonsoft.Json.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Helpers.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Mvc.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Optimization.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.Razor.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Deployment.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\bin\System.Web.WebPages.Razor.xml
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.csprojResolveAssemblyReference.cache
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\GedScannerMVC\obj\Debug\GedScannerMVC.pdb

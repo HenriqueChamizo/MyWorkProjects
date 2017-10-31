@@ -1,0 +1,80 @@
+﻿@model Model.Dashboard
+
+
+<script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")"></script>
+<!-- Small boxes (Stat box) -->
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <!-- small box -->
+        <div class="small-box bg-aqua">
+            <div class="inner">
+                <h3>@Model.arquivos.ToString()</h3>
+
+                <p>Arquivos: <br />Não classificados</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-document"></i>
+            </div>
+            <a class="small-box-footer" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#MoreForUp" 
+               href="@Url.Action("MaisArquivos", "Dashboard")">Ver mais <i class='fa fa-arrow-circle-right'></i></a>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <!-- small box -->
+        <div class="small-box bg-green">
+            <div class="inner">
+                @*<h3>53<sup style="font-size: 20px">%</sup></h3>*@
+                <h3>@Model.lotesFechados.ToString()</h3>
+
+                <p>Lotes: <br />Não Fechados</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-ios-albums"></i>
+            </div>
+            <a class="small-box-footer" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#MoreForUp"
+               href="@Url.Action("FechadosLotes", "Dashboard")">Ver mais <i class='fa fa-arrow-circle-right'></i></a>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <!-- small box -->
+        <div class="small-box bg-yellow">
+            <div class="inner">
+                <h3>@Model.lotesNEnviados.ToString()</h3>
+
+                <p>Lotes: <br />Não Enviados</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-ios-albums-outline"></i>
+            </div>
+            <a class="small-box-footer" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#MoreForUp"
+               href="@Url.Action("EnviadosLotes", "Dashboard")">Ver mais <i class='fa fa-arrow-circle-right'></i></a>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <!-- small box -->
+        <div class="small-box bg-red">
+            <div class="inner">
+                <h3>@Model.tiposArquivosEx.ToString()</h3>
+
+                <p>Tipos de Arquivos: <br />Exportados</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-android-share"></i>
+            </div>
+            <a class="small-box-footer" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#MoreForUp"
+               href="@Url.Action("ExportadosArquivos", "Dashboard")">Ver mais <i class='fa fa-arrow-circle-right'></i></a>
+        </div>
+    </div>
+    <!-- ./col -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-sm-12">
+        <div id="MoreForUp"></div>
+    </div>
+    <!-- ./col -->
+</div>
+<!-- /.row -->

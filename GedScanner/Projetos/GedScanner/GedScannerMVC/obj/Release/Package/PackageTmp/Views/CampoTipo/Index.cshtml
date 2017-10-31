@@ -1,0 +1,36 @@
+﻿@using GedScannerMVC.ClassView
+@model CampoTipo
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    @Html.Partial("_HeaderGeral", new _HeaderGeral() { imageSrc = "~/Image/Paginas/TipoArquivo-gray.png", title = "Tipos de Campos", TitlePageSmall = null })
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div style="min-height:35px">
+                        <div style="float:right">
+                            @Html.ActionLink("Novo", "Novo", "CampoTipo", null, new { @class = "btn btn-default" })
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body no-padding">
+                    <div id="ListaArquivoTipo">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                @Html.Partial("Table/SimpleStripedUnBorderTable", Model.table)
+                                @*@Html.Partial("TableOfWeb", Model.table)*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

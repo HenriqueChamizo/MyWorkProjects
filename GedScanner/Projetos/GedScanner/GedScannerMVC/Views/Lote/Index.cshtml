@@ -1,0 +1,76 @@
+﻿@using GedScannerMVC.ClassView
+@model Lote
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    @Html.Partial("_HeaderGeral", new _HeaderGeral() { imageSrc = "~/Image/Paginas//Lote-gray.png", title = "Lotes", TitlePageSmall = null })
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-primary">
+                @using (Html.BeginForm("Salvar", "Lote", FormMethod.Post))
+                {
+                    @Html.ValidationSummary(true)
+                    <div class="box-header with-border">
+                        <label id="lblPlanoIndice" class="h3 left">@Model.index.indice</label>
+                        <input id="indice" name="indice" type="hidden" value="@Model.index.indice" />
+                    </div>
+                    <div class="box-body">
+                        <div id="PlanoAtual">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group floating-label">
+                                        <input id="descricao" name="descricao" type="text" class="form-control" value="@Model.index.descricao" />
+                                        <label id="lblDescricao" for="descricao">Descrição</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group floating-label">
+                                        <input id="txtdatainicio" name="txtdatainicio" type="text" class="form-control" value="@Model.index.datainicio" disabled="disabled" />
+                                        <label id="lblDatainicio" for="txtdatainicio">Data de Criação </label>
+                                        <input id="datainicio" name="datainicio" type="hidden" value="@Model.index.datainicio" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label>
+                                        @if (Model.index.ckbFinalizarVisible)
+                                        {
+                                            @Html.CheckBox("finalizar", Model.index.finalizar, new { @class = "checkbox-inline", style = "margin-top:-4px" })
+                                            @*<input id="finalizar" type="checkbox" name="finalizar" class="checkbox-inline" style="margin-top:-4px" value="@Model.finalizar" />*@
+                                            @(" Finalizar Lote")
+                                        }
+                                        <input id="edit" name="edit" type="hidden" value="@Model.index.ckbFinalizarVisible.ToString()" />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <div class="col-sm-12">
+                            <div style="text-align:right">
+                                <input id="btnSalvar" type="submit" value="Salvar" class="btn btn-default" />
+                            </div>
+                            <label id="lblErro" style="color:red">@Model.Erro</label>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        @if (Model.index.tableFinalizadosVisible)
+        {
+            <div class="col-sm-12">
+                @Html.Partial("Table", Model.index.tableAbertos)
+            </div>
+            <div class="col-sm-12">
+                @Html.Partial("Table", Model.index.tableFechados)
+            </div>
+        }
+    </div>
+</section>
+<script>
+    LoadInputs();
+</script>

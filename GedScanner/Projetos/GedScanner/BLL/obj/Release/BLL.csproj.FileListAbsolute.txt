@@ -1,0 +1,40 @@
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\BLL.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\BLL.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\DAO.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\Model.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\DAO.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\Model.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\Persits.PDF.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\BLL.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\BLL.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\DAO.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\Model.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\Persits.PDF.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\DAO.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\bin\Release\Model.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\BLL.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\BLL.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\DAO.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\Model.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\Persits.PDF.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\DAO.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\Model.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\BLL.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\BLL.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\DAO.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\Model.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\Persits.PDF.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\DAO.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\bin\Release\Model.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\BLL\obj\Release\BLL.pdb

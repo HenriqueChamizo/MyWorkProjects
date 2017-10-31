@@ -1,0 +1,133 @@
+﻿@using GedScannerMVC.ClassView
+@model PlanoContas
+@{
+    ViewBag.Title = "Plano de Contas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    @Html.Partial("_HeaderGeral", new _HeaderGeral() { imageSrc = "~/Image/Paginas/PlanoContas-Gray.png", title = "Plano de Contas", TitlePageSmall = null })
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="box box-primary">
+                @using (Html.BeginForm("Salvar", "PlanoContas", FormMethod.Post))
+                {
+                    @Html.ValidationSummary(true)
+                    <div class="box-header with-border">
+                        <label id="lblPlanoIndice" class="h3 left">@Model.indice</label>
+                        <input id="indice" name="indice" type="hidden" value="@Model.indice" />
+                    </div>
+                    <div class="box-body">
+                        <div id="PlanoAtual">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        @*<div class="col-md-12">
+                                            <b>
+                                                <label id="lblPlanoIndice" class="h3 left">@Model.indice</label>
+                                                <input id="indice" name="indice" type="hidden" value="@Model.indice" />
+                                            </b>
+                                        </div>*@
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                <input id="txtcodigo" class="form-control" type="text" name="txtcodigo" value="@Model.codigo" disabled="disabled" />
+                                                <label id="lblCodigo" for="txtcodigo">Código</label>
+                                                <input id="codigo" name="codigo" type="hidden" value="@Model.codigo" />
+                                            </div>
+                                            @*<div class="form-group">
+                                                <label id="lblCodigo">Código: </label>
+                                                <input id="txtcodigo" name="txtcodigo" type="text" class="form-control" value="@Model.codigo" disabled="disabled" />
+                                                <input id="codigo" name="codigo" type="hidden" value="@Model.codigo" />
+                                            </div>*@
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                <input id="descricao" class="form-control" type="text" name="descricao" value="@Model.descricao" />
+                                                <label id="lblDescricao" for="descricao">Descrição</label>
+                                            </div>
+                                            @*<div class="form-group">
+                                                <label id="lblDescricao">Descrição: </label>
+                                                <input id="descricao" name="descricao" type="text" class="form-control" value="@Model.descricao" />
+                                            </div>*@
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                <input id="txtdatainicio" class="form-control" type="text" name="txtdatainicio" value="@Model.datainicio" disabled="disabled" />
+                                                <label id="lblDatainicio" for="txtdatainicio">Data de Criação</label>
+                                                <input id="datainicio" name="datainicio" type="hidden" value="@Model.datainicio" />
+                                            </div>
+                                            @*<div class="form-group">
+                                                <label id="lblDatainicio">Data de Criação: </label>
+                                                <input id="txtdatainicio" name="txtdatainicio" type="text" class="form-control" value="@Model.datainicio" disabled="disabled" />
+                                                <input id="datainicio" name="datainicio" type="hidden" value="@Model.datainicio" />
+                                            </div>*@
+                                        </div>
+                                        <div class="col-md-12">
+                                            @if (Model.ckbFinalizarVisible)
+                                            {
+                                                if (!Model.ckbFinalizarEnable)
+                                                {
+                                                    <div class="alert alert-danger alert-dismissible">
+                                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                                        <h3><i class="icon fa fa-ban"></i> Atenção!</h3>
+                                                        @(Model.ckbFinalizarText)
+                                                    </div>
+                                                }
+                                                <div class="form-group floating-label">
+                                                    <div class="checkbox checkbox-inline checkbox-styled">
+                                                        <label id="lblfinalizar" onclick="finalizarclick()">
+                                                            <input type="checkbox" id="ckbfinalizar" name="ckbfinalizar" class="minimal" value="@(Convert.ToBoolean(Model.finalizar) ? "true" : "false")"
+                                                                   @(Convert.ToBoolean(Model.finalizar) ? "checked" : "") onclick="finalizarclick('ckbfinalizar', 'finalizar')" />
+                                                            @(" Finalizar Plano de Contas")
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <input type="hidden" value="" name="finalizar" id="finalizar" />
+                                            }
+                                            <input id="edit" name="edit" type="hidden" value="@Model.ckbFinalizarVisible.ToString()" />
+                                        </div>
+                                        <div class="col-md-12"><br /></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="min-height: 35px;text-align:right">
+                                    <input id="btnSalvar" type="submit" value="Salvar" class="btn btn-default" />
+                                    <label id="lblErro" style="color:red">@Model.Erro</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-sm-12"><br /></div>
+        <div class="col-sm-12">
+            @if (Model.tableFinalizadasVisible)
+            {
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h4>Relação Plano de Contas</h4>
+                    </div>
+                    <div class="box-body no-padding">
+                        <div id="PlanoFechado">
+                            <div class="row">
+                                <div class="col-sm-12"><br /></div>
+                                <div class="col-sm-12">
+                                    @*@Html.Partial("TableOfWeb", Model.tableFinalizadas)*@
+                                    @Html.Partial("Table/SimpleStripedUnBorderTable", Model.tableFinalizadas)
+                                </div>
+                            </div>
+                            @*<button type="submit" class="btn btn-primary">Submit</button>*@
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+

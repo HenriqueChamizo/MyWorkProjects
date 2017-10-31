@@ -1,0 +1,127 @@
+﻿@model GedScannerMVC.ClassView.ArquivoTipo
+@using Model.Ged
+@if (Model.campo != null)
+{
+    <div class="col-sm-12" id="div-@(Model.campo.IdDescricao)">
+        <div class="row">
+            <div class="col-sm-12"><br /></div>
+            <div class="col-sm-4">
+                <div class="form-group floating-label">
+                    <input type="text" name="@Model.campo.NameDescricao" id="@Model.campo.IdDescricao" 
+                           class="@Model.campo.ClassDescricao" onkeyup="OnKeyUp('@Model.campo.IdDescricao')" />
+                    <label for="@Model.campo.IdDescricao">Descrição</label>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group floating-label">
+                    <select name="@Model.campo.NameTipo" id="@Model.campo.IdTipo" class="@Model.campo.ClassTipo" >
+                        <option value="-1"></option>
+                        @foreach (CampoTipo tipo in Model.campo.tipos)
+                        {
+                            <option value="@tipo.CAPTIP_IND">@tipo.CAPTIP_DESCRICAO</option>
+                        }
+                    </select>
+                    <label for="@Model.campo.IdTipo">Tipo</label>
+                </div>
+            </div>
+            <div class="col-sm-2" style="">
+                <div class="form-group floating-label">
+                    <div class="checkbox checkbox-inline checkbox-styled">
+                        <label for='@Model.campo.IdObrigacao'>
+                            <input type="checkbox" id="@Model.campo.IdObrigacao" name="@Model.campo.NameObrigacao" class="@Model.campo.ClassObrigacao" style="margin:0px" onclick="finalizarclick()" />
+                            @(" Obrigatório")
+                            @*<input type='checkbox' id='ShowUI' /> Mostrar Driver*@
+                        </label>
+                    </div>
+                </div>
+                @*<label>
+                    <input type="checkbox" name="@Model.campo.NameObrigacao" id="@Model.campo.IdObrigacao" class="@Model.campo.ClassObrigacao" style="margin:0px" /> Obrigatório
+                </label>*@
+            </div>
+            <div class="col-sm-2">
+                <br />
+                <a style="cursor:pointer" onclick="Remove('div-@(Model.campo.IdDescricao)')">
+                    <span class="glyphicon glyphicon-remove" style="float: left;margin-right: 2px;margin-top: 2px;"></span> Remove
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12">
+
+        <script>
+            LoadInputs();
+        </script>
+        <br />
+    </div>
+}
+else if (Model.campos != null && Model.campos.Count != 0)
+{
+    foreach (GedScannerMVC.ClassView.CampoDinamico campo in Model.campos)
+    {
+        <div class="col-sm-12" id="div-@(campo.IdDescricao)">
+            <div class="row">
+                <div class="col-sm-12"><br /></div>
+                <div class="col-sm-4">
+                    <div class="form-group floating-label">
+                        <input type="text" name="@campo.NameDescricao" id="@campo.IdDescricao" 
+                               class="@campo.ClassDescricao" onkeyup="OnKeyUp('@campo.IdDescricao')" value="@campo.ValueDescricao" />
+                        <label for="@campo.IdDescricao">Descrição</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group floating-label">
+                        <select name="@campo.NameTipo" id="@campo.IdTipo" class="@campo.ClassTipo">
+                            <option value="-1">Selecione...</option>
+                            @{
+                                List<CampoTipo> tipos = campo.tipos;
+                            }
+                            @foreach (CampoTipo tipo in tipos)
+                            {
+                                <option value="@tipo.CAPTIP_IND" @((campo.ValueOptionTipo == tipo.CAPTIP_IND) ? "selected=selected" : "")>@tipo.CAPTIP_DESCRICAO</option>
+                            }
+                        </select>
+                        <label for="@campo.IdTipo">Tipo</label>
+                    </div>
+                    @*@{ 
+                        SelectList tipos = new SelectList(campo.tipos);
+                    }
+                    @Html.DropDownList(campo.NameTipo, tipos, "Selecione...", new { id = campo.IdTipo, @class = campo.ClassTipo })*@
+                </div>
+                <div class="col-sm-2" style="">
+                    <div class="form-group floating-label">
+                        <div class="checkbox checkbox-inline checkbox-styled">
+                            <label for='@campo.IdObrigacao'>
+                                <input type="checkbox" id="@campo.IdObrigacao" name="@campo.NameObrigacao" class="@campo.ClassObrigacao" style="margin:0px" onclick="finalizarclick()"
+                                       @(!string.IsNullOrEmpty(campo.CheckedObrigacao) ? "checked=checked" : "") />
+                                @(" Obrigatório")
+                                @*<input type='checkbox' id='ShowUI' /> Mostrar Driver*@
+                            </label>
+                        </div>
+                    </div>
+                    @*<label>
+                        <input type="checkbox" name="@campo.NameObrigacao" id="@campo.IdObrigacao" class="@campo.ClassObrigacao" style="margin:0px"
+                               @(!string.IsNullOrEmpty(campo.CheckedObrigacao) ? "checked=checked" : "") > Obrigatório
+                    </label>*@
+                </div>
+                <div class="col-sm-2">
+                    <br />
+                    <br />
+                    <a style="cursor:pointer;text-decoration:none;margin: 0px;padding: 0px;" id="linkItemEdit@(campo.IdDescricao)" class="btn disabled">
+                        <span class="glyphicon glyphicon-remove" style="float: left;margin-right: 2px;margin-top: 2px;"></span> Remove
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <script>
+                LoadInputs();
+            </script>
+            <br />
+        </div>
+    }
+    <!--@Model.campos.Count.ToString()-->
+}
+else
+{
+    <!--0-->
+}

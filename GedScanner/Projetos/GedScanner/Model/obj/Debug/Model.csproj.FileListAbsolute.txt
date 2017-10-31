@@ -1,0 +1,27 @@
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.pdb
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Debug\Persits.PDF.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Debug\Persits.PDF.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Debug\Persits.PDF.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Debug\Model.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Debug\Persits.PDF.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

@@ -1,0 +1,40 @@
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.pdb
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.pdb
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.dll
+D:\Henrique\Trabalhos\Assecont\Projetos\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Persits.PDF.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Persits.PDF.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Persits.PDF.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\DAO.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Persits.PDF.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Debug\Model.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache

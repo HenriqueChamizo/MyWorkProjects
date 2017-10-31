@@ -1,0 +1,40 @@
+﻿@model System.String
+@using Model
+@{
+    LoginsInternos login = Session["Usuario"] as LoginsInternos;
+    if (login != null && login.cliente != null)
+    {
+
+        Cliente cliente = login.cliente;
+
+        <div class="user-panel" style="white-space:normal;padding: 10px 0px 10px 10px;">
+            <div class="pull-left image" style="padding-right: 10px;">
+                <img src="@Url.Content((Model + "/Image/Icones/Empresa-gray.png").Replace("//", "/"))" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info" style="position: static;width: 165px;padding: 5px 5px 5px 0px;">
+                <p>@cliente.CLI_RAZAOSOCIAL</p>
+                @*<p>@cliente.CLI_FANTASIA</p>*@
+                <a>@*<i class="fa fa-circle text-success"></i>*@ @(cliente.CLI_CNPJ.Substring(0, 2) + "." + cliente.CLI_CNPJ.Substring(1, 3) + "." + cliente.CLI_CNPJ.Substring(4, 3) + "/" + cliente.CLI_CNPJ.Substring(7, 4) + "-" + cliente.CLI_CNPJ.Substring(11, 2))</a>
+            </div>
+        </div>
+        @*<form action="#" method="get" class="sidebar-form">
+            <div class="input-group floating-label">
+                <input type="text" name="q" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>*@
+
+        @*<div class='row'>
+            <div class='col-md-12' style='text-align:right;font-size:20px;font-weight:bold'>
+                @cliente.CLI_RAZAOSOCIAL
+            </div>
+            <div class='col-md-12' style='text-align:right;font-size:18px'>
+                @cliente.CLI_FANTASIA <span style='font-size:15px'> - @(cliente.CLI_CNPJ.Substring(0, 2) + "." + cliente.CLI_CNPJ.Substring(1, 3) + "." + cliente.CLI_CNPJ.Substring(4, 3) + "/" + cliente.CLI_CNPJ.Substring(7, 4) + "-" + cliente.CLI_CNPJ.Substring(11, 2))</span>
+            </div>
+        </div>*@
+    }
+}

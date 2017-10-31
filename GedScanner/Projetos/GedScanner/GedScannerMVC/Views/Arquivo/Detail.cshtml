@@ -1,0 +1,510 @@
+﻿@using GedScannerMVC.ClassView
+@using Model.Enuns
+@model Arquivo
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    @Html.Partial("_HeaderGeral", new _HeaderGeral() { imageSrc = "~/Image/Paginas/Arquivo-gray.png", title = "Arquivo", TitlePageSmall = null })
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div class="row">
+                        @if (!String.IsNullOrEmpty(Model.GEDARQ_DESCRICAO))
+                        {
+                            <div class="col-sm-6">
+                                <h3>@Model.GEDARQ_DESCRICAO</h3> 
+                            </div>
+                            <div class="col-sm-6" style="text-align: right;padding: 0px 30px 0px 15px;">
+                                @foreach (Model.PlanoContas plano in Model.planoscontas)
+                                {
+                                    if (Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_IND != -1)
+                                    {
+                                        int planoSelecionado = Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_PLANCONTCONTA.planocontas.PLAN_IND;
+                                        if (plano.PLAN_IND == planoSelecionado)
+                                        {
+                                            if (!plano.PLAN_FECHADO)
+                                            {
+                                                <h3>@plano.PLAN_DESCRICAO <small>Plano Atual</small></h3>
+                                            }
+                                            <input type="hidden" value="@plano.PLAN_IND" id="hiddenPlanoContas" />
+                                            break;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (!plano.PLAN_FECHADO)
+                                        {
+                                            <h3>Plano Atual <small>@plano.PLAN_DESCRICAO</small></h3>
+                                        }
+                                        <input type="hidden" value="@plano.PLAN_IND" id="hiddenPlanoContas" />
+                                        break;
+                                    }
+                                }
+                            </div>
+                            <div class="col-sm-12"><br /></div>
+                        }
+                        @*<div class="col-sm-4">
+                            <div class="form-group">
+                                <select id="ddlPlanoContas" name="planoContas" class="form-control" onchange="onChangeIdPlano();">
+                                    <option value="-1">Selecione...</option>
+                                    @foreach (Model.PlanoContas plano in Model.planoscontas)
+                                    {
+                                        if (Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_IND != -1)
+                                        {
+                                            int planoSelecionado = Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_PLANCONTCONTA.planocontas.PLAN_IND;
+                                            if (plano.PLAN_IND == planoSelecionado)
+                                            {
+                                                if (plano.PLAN_FECHADO)
+                                                {
+                                                    <option value="@plano.PLAN_IND" selected>@plano.PLAN_DESCRICAO (Atual)</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@plano.PLAN_IND" selected>@plano.PLAN_DESCRICAO (Atual Aberto)</option>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                if (plano.PLAN_FECHADO)
+                                                {
+                                                    <option value="@plano.PLAN_IND">@plano.PLAN_DESCRICAO</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@plano.PLAN_IND">@plano.PLAN_DESCRICAO (Aberto)</option>
+                                                }
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (plano.PLAN_FECHADO)
+                                            {
+                                                <option value="@plano.PLAN_IND">@plano.PLAN_DESCRICAO</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@plano.PLAN_IND">@plano.PLAN_DESCRICAO (Aberto)</option>
+                                            }
+                                        }
+                                    }
+                                </select>
+                                <label for="ddlPlanoContas">Plano de Contas</label>
+                            </div>
+                        </div>*@
+                        <div class="col-sm-4">
+                            <div class="form-group floating-label">
+                                @{ string atual = "-1";}
+                                <select id="ddlTipoArquivo" name="tipoArquivo" class="form-control" onchange="onChangeIdTipo();">
+                                    <option value="-1">Selectione...</option>
+                                    @foreach (Model.Ged.ArquivoTipo tipo in Model.tipos)
+                                    {
+                                        if (Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_IND != -1)
+                                        {
+                                            int tipoArqSelecionado = Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_ARQUIVOTIPO.GEDTIPO_IND;
+                                            if (tipo.GEDTIPO_IND == tipoArqSelecionado)
+                                            {
+                                                atual = tipo.GEDTIPO_IND.ToString();
+                                                <option value="@tipo.GEDTIPO_IND" selected>@tipo.GEDTIPO_DESCRICAO (Atual)</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@tipo.GEDTIPO_IND">@tipo.GEDTIPO_DESCRICAO</option>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <option value="@tipo.GEDTIPO_IND">@tipo.GEDTIPO_DESCRICAO</option>
+                                        }
+                                    }
+                                </select>
+                                <label for="ddlTipoArquivo">Tipo de Arquivo</label>
+                                <input type="hidden" name="hiddenAtual" id="hiddenAtual" value="@atual" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="form-group floating-label" id="ContasDynamic">
+                                @if (Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_IND != -1 &&
+                                     Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_PLANCONTCONTA.conta.CONT_IND != 0)
+                                {
+                                    @Html.Partial("Conta/DropDownList", new Listas()
+                                       {
+                                           contas = Model.contas,
+                                           conta = Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_PLANCONTCONTA.conta.CONT_IND, 
+                                           disabled = true
+                                       })
+                                }
+                                else
+                                {
+                                    @Html.Partial("Conta/DropDownList", new Listas()
+                                       {
+                                           contas = new List<Model.Conta>()
+                                       })
+                                }
+                            </div>
+                            <div id="loadingContas" style="opacity: 0.5;margin: -83px auto 0px auto;background-color: white;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div id="Arquivo">
+                        @if (String.IsNullOrEmpty(Model.exception))
+                        {
+                            @Scripts.Render("~/bundles/elevate-zoom")
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img id="image" src="@Model.resourceImg" data-zoom-image="@Model.resourceImg"
+                                            style="width:100%;border:1px solid #000000;margin-bottom:15px;" />
+                                    <script type="text/javascript">
+                                                    $("#image").elevateZoom({
+                                                        zoomType: "inner",
+                                                        cursor: "crosshair",
+                                                        responsive: true,
+                                                        scrollZoom: true,
+                                                        lensFadeIn: true,
+                                                        lensFadeOut: true,
+                                                        easingDuration: 2000
+                                                    });
+                                    </script>
+                                </div>
+                                <div class="col-sm-6" id="colFormDynamic">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div id="erro"></div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div id="formDynamic" style="max-height:815px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3>@Model.exception</h3>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    @{
+        string[] split = Request.FilePath.ToString().Split(new string[] { "/" }, StringSplitOptions.None);
+        string id = split[split.Length - 1];
+    }
+
+    //Scroll from #formDynamic
+    $("#formDynamic").slimScroll({
+        //height: ($(this).height() - $("#colFormDynamic").height()) + "px",
+        height: $(this).height() + "px",
+        color: "black",
+        size: "3px",
+        railVisible: true,
+        railColor: 'darkgray',
+        railOpacity: 0.9,
+        alwaysVisible: false
+    });
+
+    //OnLoad from this page
+    function OnLoad() {
+        //var ddlPlanoContas = $('#ddlPlanoContas').val();
+        //if (ddlPlanoContas != "-1"){
+        //    onChangeIdPlano();
+        //}
+        //var ddlConta = $('#ddlConta').val();
+        //if (ddlConta != "-1"){
+        //    $("#ddlTipoArquivo").removeAttr("disabled");
+        //    var ddlTipoArquivo = $('#ddlTipoArquivo').val();
+        //    if (ddlTipoArquivo != "-1"){
+        //        onChangeIdTipo();
+        //    }
+        //}
+        //$("#ddlTipoArquivo").removeAttr("disabled");
+        var ddlTipoArquivo = $('#ddlTipoArquivo').val();
+        var ddlConta = $('#ddlConta').val();
+        @{ 
+            int conta = 0;
+            if (Model.arquivo.GEDARQ_CONTARQUIVOTIPO != null)
+            {
+                if (Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_PLANCONTCONTA != null)
+                {
+                    if (Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_PLANCONTCONTA.conta != null)
+                    {
+                        conta = Model.arquivo.GEDARQ_CONTARQUIVOTIPO.CATIP_PLANCONTCONTA.conta.CONT_IND;
+                    }
+                }
+            }
+        }
+
+        var contaSelected = @conta;
+
+        if (ddlTipoArquivo != "-1") {
+            $("#ddlConta").removeAttr("disabled");
+            if (contaSelected != -1){
+                //onChangeIdTipo();
+                onChangeIdConta();
+                $("#ddlConta").val(String(contaSelected));
+            }
+        }
+        if (ddlConta != "-1"){
+        }
+    }
+    OnLoad();
+
+    @*function OnKeyUp(id) {
+        $('#erro').html("");
+        var dx = $("#" + id).val();
+        if (dx == "") {
+            var dado = '{ "type_color": "@((Convert.ToInt32(TypesBootstrapColors.danger)).ToString())", ' +
+                       '  "title": "Campos Obrigatório", ' +
+                       '  "text": "Formulário não pode estar vazio!" }';
+            jQuery.ajax({
+                url: '@Url.Action("Alert", "Utilities")',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ "dado": dado }),
+                dataType: "html",
+                success: function (result) {
+                    $('#erro').html(result);
+                },
+                complete: function () {
+                    //$('#erro').html('@*Html.Partial("Utilities/Alert", new Alert() { type_color = TypesBootstrapColors.danger, title = "Campos Iguais", text = "Formulário não pode ter Campos com Descrição iguais!" }).ToHtmlString().Replace("\r", "").Replace("\n", "")@');
+                    //$('#erro').html("Campos Iguais: Formulário não pode ter Campos com Descrição iguais!");
+                    $('#loadingSave').html("");
+                    $("#" + id + "-div").attr("class", "form-group has-error");
+                    //onChangeIdConta();
+                    //document.getElementById("#descricao-" + String(y)+ "-div").className = "form-group has-error";
+                }
+            });
+            return;
+        }
+        else {
+            $('#erro').html("");
+            $('#loadingSave').html("");
+            $("#" + id + "-div").attr("class", "form-group");
+        }
+    }*@
+
+    function Remove(id) {
+        $("#" + id).remove();
+        var split = id.split("-");
+        var ind = parseInt(split[split.length - 1]);
+        var removed = String($("#hiddenRemoved").val()).replace("[").replace("]").replace(" ").split(",");
+        removed.push(String(ind));
+        $("#hiddenRemoved").val(removed);
+    }
+
+    function onChangeIdPlano() {
+        var ddlPlanoContas = document.getElementById("ddlPlanoContas");
+        var url = window.location.href;
+        var split = url.split("/");
+        var idArquivo = split[split.length - 1].replace("#", "");
+        $(document).ajaxStart(function () {
+            //$('#ContasDynamic').html('');
+            $('#loadingContas').html('@Html.Partial("Loading")');
+            $('#formDynamic').html('');
+        });
+        jQuery.ajax({
+            url: '@Url.Action("GetContas", "Arquivo")',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                'id': ddlPlanoContas[ddlPlanoContas.selectedIndex].value }),
+            dataType: "html",
+            success: function (result) {
+
+            }
+        }).done(function (msg) {
+            $('#ContasDynamic').html(msg);
+            $('#loadingContas').html('');
+            $('#formDynamic').html('');
+        });
+    }
+
+    function onChangeIdConta() {
+        var ddlPlanoContas = $('#hiddenPlanoContas').val();
+        var ddlTipoArquivo = document.getElementById("ddlTipoArquivo");
+        var url = window.location.href;
+        var split = url.split("/");
+        var idArquivo = split[split.length - 1].replace("#", "");
+        var idAtual = $('#hiddenAtual').val();
+
+        $(document).ajaxStart(function () {
+            $('#formDynamic').html('@Html.Partial("Loading")');
+            $('#loadingContas').html('');
+        });
+        jQuery.ajax({
+            url: '@Url.Action("FormDinamico", "Arquivo")',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                'idArquivo': idArquivo,
+                'idTipo': ddlTipoArquivo[ddlTipoArquivo.selectedIndex].value,
+                'idAtual': idAtual }),
+            dataType: "html",
+            success: function (result) {
+            }
+        }).done(function (msg) {
+            $('#formDynamic').html("");
+            $('#formDynamic').html(msg);
+            $('#loadingContas').html("");
+            LoadInputs();
+        });
+        LoadInputs();
+    }
+
+    function onChangeIdTipo() {
+        var ddlPlanoContas = $('#hiddenPlanoContas').val();
+        var ddlTipoArquivo = document.getElementById("ddlTipoArquivo");
+        var url = window.location.href;
+        var split = url.split("/");
+        var idArquivo = split[split.length - 1].replace("#", "");
+        var idAtual = $('#hiddenAtual').val();
+
+        $(document).ajaxStart(function () {
+            $('#formDynamic').html('');
+            $('#loadingContas').html('@Html.Partial("Loading")');
+        });
+        jQuery.ajax({
+            url: '@Url.Action("GetContas", "Arquivo")',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                'id': ddlPlanoContas }),
+            dataType: "html",
+            success: function (result) {
+            }
+        }).done(function (msg) {
+            $('#ContasDynamic').html(msg);
+            $('#loadingContas').html('');
+            $('#formDynamic').html('');
+        });
+
+        LoadInputs();
+    }
+
+    $(document).ready(function () {
+        $("input[type=text]").keyup(function () {
+            var id = this.id;
+            if (id == "descricao") {
+                var passo = $("#passo").val();
+                if (this.value != "") {
+                    $('#erro').html("");
+                }
+                else {
+                    if (passo != 0) {
+                        $('#erro').html('<div class="alert alert-danger" style="padding: 5px;text-align:center;" role="alert"> <strong>Descrição</strong> Campo obrigatório! </div>');
+                        $("#passo").val('0');
+                    }
+                    else {
+                        $("#passo").val('1');
+                    }
+                }
+            }
+        }).keyup();
+
+        $("button[id='btnAddCampo']").click(function (e) {
+            var count = parseInt(String($('#hiddenCount').val()));
+
+            $(document).ajaxStart(function () {
+                $('#loading').html('@Html.Partial("Loading")');
+            });
+
+            jQuery.ajax({
+                url: '@Url.Action("AddCampoDinamicoNovo", "ArquivoTipo")',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    'count': count
+                }),
+                dataType: "html",
+                success: function (result) {
+                }
+            }).done(function (data) {
+                $('#Campos').append(data);
+                $('#hiddenCount').val(String(parseInt(count) + 1));
+                $('#loading').html("");
+            });
+        });
+    });
+
+    function btnSubmitClick() {
+        var hiddenIndices = String($('#hiddenIndices').val());
+        var valuePlano = $('#hiddenPlanoContas').val();
+        var ddlConta = document.getElementById("ddlConta");
+        var valueConta = ddlConta.value;
+        var ddlTipoArquivo = document.getElementById("ddlTipoArquivo");
+        var valueTipo = ddlTipoArquivo.value;
+        var split = hiddenIndices.split(",");
+        var count = split.length;
+
+        $(document).ajaxStart(function () {
+            $('#loadingSave').html('@Html.Partial("Loading")');
+            $('#loading').html("");
+        });
+
+        var idArquivo = @id;
+
+        //for (var x = 0; x < count; x++) {
+        //    var dx = document.getElementById(split[x] + "-descricao").value;
+        //    for (var y = 0; y < count; y++) {
+        //        if (x != y) {
+        //            var dy = document.getElementById("descricao-" + String(y)).value;
+        //            if (dx == dy) {
+        //                $('#erro').html('<div class="alert alert-danger" role="alert"> <strong>Campos Iguais</strong> Formulário não pode ter Campos com Descrição iguais! </div>');
+        //                $('#loadingSave').html();
+        //                document.getElementById("descricao-" + String(x)).className = "erro form-control";
+        //                document.getElementById("descricao-" + String(y)).className = "erro form-control";
+        //                return;
+        //            }
+        //        }
+        //    }
+        //}
+
+        var json = "{ 'arquivo': '" + idArquivo + "', " +
+                   "  'plano': '" + valuePlano + "', " +
+                   "  'conta': '" + valueConta + "', " +
+                   "  'tipo': '" + valueTipo + "', " +
+                    " 'valores': [";
+        for (var i = 0; i < count; i++) {
+            //var input = $("#" + split[i]);
+            var value = $("#" + split[i]).val();
+            var splitI = split[i].split("-");
+            var campo = "{  'CAPVAL_VALOR': '" + value + "'," +
+                        "   'CAMP_IND': '" + splitI[0] + "'" +
+                        "},";
+            json = json + campo;
+        }
+
+        json = json.substring(0, json.length - 1) + "]}";
+
+        jQuery.ajax({
+            url: '@Url.Action("SalvarDetail", "Arquivo")',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ 'json': json }),
+            dataType: "html",
+            success: function (result) {
+            }
+        }).done(function (data) {
+            $('#Campos').append(data);
+            $('#hiddenCount').val(String(parseInt(count) + 1));
+            $('#loadingSave').html("");
+            $('#loading').html("");
+            window.location.href = data;
+        });
+    }
+</script>

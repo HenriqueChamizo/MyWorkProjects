@@ -1,0 +1,134 @@
+﻿@model GedScannerMVC.ClassView.Conta
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="content-header">
+    @Html.Partial("_Header", Model.header)
+    @*@Html.Partial("_HeaderGeral", new _HeaderGeral() { imageSrc = "~/Image/Paginas/PlanoContas-Gray.png", title = "Plano de Contas", TitlePageSmall = null })*@
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-primary">
+                <!-- form start -->
+                @using (Html.BeginForm("Salvar", "Conta", FormMethod.Post))
+                {
+                    Html.ValidationSummary(true);
+                    <div class="box-header with-border">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                @if (Model.tableModel != null)
+                                {
+                                    <div style="float: left;min-height:35px;width:48%;">
+                                        @Html.ActionLink("Tipos de Contas", "Tipo", null, new { @class = "btn btn-default" })
+                                    </div>
+                                    <div style="float: right;min-height:35px;width:48%;text-align:right;">
+                                        @Html.ActionLink("Nova Conta", "Novo", null, new { @class = "btn btn-default" })
+                                    </div>
+                                }
+                                else
+                                {
+                                    <label id="lblPlanoIndice" class="h3 left">@Model.indice</label>
+                                    <input id="indice" name="indice" type="hidden" value="@Model.indice" />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body @(Model.tableModel != null ? "no-padding" : "")">
+                        <div id="Contas">
+                            @if (Model.tableModel != null)
+                            {
+                                <div id="@Model.tableModel.id">
+                                    @*@Html.Partial("TableOfWeb", Model.table)*@
+                                    @*@Html.Partial("Table/SimpleStripedUnBorderTable", Model.tableModel.table)*@
+                                    @Html.Partial("Table", Model.tableModel)
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group floating-label">
+                                            <input id="txtacesso" name="acesso" type="text" class="form-control" value="@Model.acesso" required />
+                                            <label id="lblCodigo" for="txtacesso">Acesso </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group floating-label">
+                                            <input id="descricao" name="descricao" type="text" class="form-control" value="@Model.descricao" required />
+                                            <label id="lblDescricao" for="descricao">Descrição </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group floating-label">
+                                            <input id="txtdatainicio" name="txtdatainicio" type="text" class="form-control" value="@Model.datainicio" disabled="disabled" />
+                                            <label id="lblDatainicio" for="txtdatainicio">Data de Criação </label>
+                                            <input id="datainicio" name="datainicio" type="hidden" value="@Model.datainicio" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group floating-label">
+                                            @Html.DropDownList("ddlTipos", Model.ddlTipos, new { /*onchange = @"form.submit();",*/ @class = "form-control", required = "required", id = "ddlTipos" })
+                                            <label id="lblTipos" for="">Tipos </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        @*<label>
+                                                @Html.CheckBox("condition", Model.condition, new { @class = "checkbox-inline", style = "margin-top:-4px" })
+                                                @*<input id="finalizar" type="checkbox" name="finalizar" class="checkbox-inline" style="margin-top:-4px" value="@Model.finalizar" />*
+                                                @(" Vincular ao Plano de Contas Atual")
+                                            </label>*@
+
+                                        <div class="form-group floating-label">
+                                            <div class="checkbox checkbox-inline checkbox-styled">
+                                                <label id="lblcondition" onclick="conditionclick()" style="z-index:99999">
+                                                    <input type="checkbox" id="ckbcondition" name="ckbcondition" class="minimal" value="@(Convert.ToBoolean(Model.condition) ? "true" : "false")"
+                                                            @(Convert.ToBoolean(Model.condition) ? "checked" : "") onclick="finalizarclick()" />
+                                                    @(" Vincular ao Plano de Contas Atual")
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        @*<div class="form-group floating-label">
+                                                <label id="lblcondition" onclick="conditionclick()" style="z-index:99999">
+                                                    <input type="checkbox" id="ckbcondition" name="ckbcondition" class="minimal" value="@(Convert.ToBoolean(Model.condition) ? "true" : "false")"
+                                                            @(Convert.ToBoolean(Model.condition) ? "checked" : "") onclick="finalizarclick()" />
+                                                    @(" Vincular ao Plano de Contas Atual")
+                                                </label>
+                                            </div>*@
+                                        @*<div style="width: 100%;height: 100%;top: 0px;position: absolute;" onclick="conditionclick()"></div>*@
+                                        <input type="hidden" value="" name="condition" id="condition" />
+                                        <script>
+                                            function conditionclick() {
+                                                var var1 = $('#ckbcondition');
+                                                var var2 = var1.val() == 'false';
+                                                var var3 = String(var2);
+                                                $('#condition').val(var3);
+                                                //$('#ckbcondition').val(var2);
+                                            };
+                                            //function conditionload() {
+                                            //    $('#lblcondition .icheckbox_minimal-blue').attr("onclick", "conditionclick()");
+                                            //}
+                                        </script>
+                                    </div>
+                                    <div class="col-sm-12"><br /></div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    if (Model.tableModel == null)
+                    {
+                        <div class="box-footer">
+                            <div style="text-align:right">
+                                <input id="btnSalvar" type="submit" value="Salvar" class="btn btn-default" />
+                            </div>
+                            <label id="lblErro" style="color:red">@Model.Erro</label>
+                            <input id="edit" name="edit" value="@Model.edit.ToString()" type="hidden" />
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</section>

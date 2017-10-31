@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportFormat", "ExportFormat\ExportFormat.csproj", "{EEE8F6F7-E7D4-4803-B6AE-D635C5B8744C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chamizo.Class", "Chamizo.Class\Chamizo.Class.csproj", "{7C4824DF-E1A0-4FF9-A611-218E75355E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chamizo.Control", "Chamizo.Control\Chamizo.Control.csproj", "{9409D9B0-88E4-461C-A1F8-CAD61A377988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chamizo.Web.Control", "Chamizo.Web.Control\Chamizo.Web.Control.csproj", "{097CC8FA-8070-4F53-B5E6-708DA8107B66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEE8F6F7-E7D4-4803-B6AE-D635C5B8744C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE8F6F7-E7D4-4803-B6AE-D635C5B8744C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE8F6F7-E7D4-4803-B6AE-D635C5B8744C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE8F6F7-E7D4-4803-B6AE-D635C5B8744C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C4824DF-E1A0-4FF9-A611-218E75355E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C4824DF-E1A0-4FF9-A611-218E75355E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C4824DF-E1A0-4FF9-A611-218E75355E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C4824DF-E1A0-4FF9-A611-218E75355E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9409D9B0-88E4-461C-A1F8-CAD61A377988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9409D9B0-88E4-461C-A1F8-CAD61A377988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9409D9B0-88E4-461C-A1F8-CAD61A377988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9409D9B0-88E4-461C-A1F8-CAD61A377988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{097CC8FA-8070-4F53-B5E6-708DA8107B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097CC8FA-8070-4F53-B5E6-708DA8107B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097CC8FA-8070-4F53-B5E6-708DA8107B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097CC8FA-8070-4F53-B5E6-708DA8107B66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

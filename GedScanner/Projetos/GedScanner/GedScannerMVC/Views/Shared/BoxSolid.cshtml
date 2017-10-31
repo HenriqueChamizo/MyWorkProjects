@@ -1,0 +1,169 @@
+﻿@model GedScannerMVC.ClassView.BoxSolid
+
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<div id="@(Model.isSubBox ? "" : Model.id)">
+    <div class="box box-@Model.box_type_class.ToString() box-solid">
+        <div class="box-header with-border">
+            <h3 class="box-title">@Model.box_title</h3>
+
+            @if (Model.isCollapsed)
+            {
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+            }
+        </div>
+        <div class="box-body no-padding">
+            @*@Html.Partial("TableOfWeb", Model.table)*@
+            @Html.Partial("Table/SimpleStripedUnBorderTable", Model.table)
+        </div>
+        <div class="box-footer">
+            <div class="row">
+
+                @if (Model.pagination.rows > 10)
+                {
+                    <div class="col-sm-6">
+                        <div class="form-group" style="max-width:200px">
+                            <select id="itensPorPagina" name="itensPorPagina" aria-controls="example1" class="form-control input-sm" onchange="ChangeItens()">
+                                @if (Model.pagination.itens.Count() > 0)
+                                {
+                                    for (int i = 0; i < Model.pagination.itens.Count(); i++)
+                                    {
+                                        <option value="@Model.pagination.itens[i].ToString()" @(Model.pagination.item == i ? "selected" : "" )>@Model.pagination.itens[i].ToString()</option>
+                                    }
+                                }
+                                else
+                                {
+                                    <option value="10" @(Model.pagination.item == 0 ? "selected" : "" )>@Model.pagination.itens[0].ToString()</option>
+                                    <option value="25" @(Model.pagination.item == 1 ? "selected" : "" )>@Model.pagination.itens[1].ToString()</option>
+                                    <option value="50" @(Model.pagination.item == 2 ? "selected" : "" )>@Model.pagination.itens[2].ToString()</option>
+                                    <option value="100" @(Model.pagination.item == 3 ? "selected" : "" )>@Model.pagination.itens[3].ToString()</option>
+                                }
+                            </select>
+                            <label for="itensPorPagina">Itens por página</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pagination pagination-sm no-margin pull-right">
+                            @if (Model.pagination.pages >= 3)
+                            {
+                                <li @(Model.pagination.page == 1 ? "class=disabled" : "")>
+                                    <a onclick="SelectedPage(1)">&laquo;</a>
+                                </li>
+                            }
+                            @for (int i = 1; i <= Model.pagination.pages; i++)
+                            {
+                                if (Model.pagination.pages >= Model.pagination.page)
+                                {
+                                    if (Model.pagination.pages < 3)
+                                    {
+                                        <li @(Model.pagination.page == i ? "class=active" : "")><a onclick="SelectedPage(@i)">@i</a></li>
+                                    }
+                                    else
+                                    {
+                                        if (i == Model.pagination.page - 1 || i == Model.pagination.page || i == Model.pagination.page + 1)
+                                        {
+                                            <li @(Model.pagination.page == i ? "class=active" : "")><a onclick="SelectedPage(@i)">@i</a></li>
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    break;
+                                }
+                            }
+                            @if (Model.pagination.pages >= 3)
+                            {
+                                <li @(Model.pagination.page == 1 ? "class=disabled" : "")>
+                                    <a onclick="SelectedPage(@Model.pagination.pages)">&raquo;</a>
+                                </li>
+                            }
+                            @*@if (Model.pagination.page == 1)
+                            {
+                                <li class="disabled"><a>&laquo;</a></li>
+                                <li class="active"><a>1</a></li>
+                                <li><a onclick="SelectedPage(2)">2</a></li>
+                                <li><a onclick="SelectedPage(3)">3</a></li>
+                                <li><a onclick="SelectedPage(4)">&raquo;</a></li>
+                            }
+                            else if (Model.pagination.page == Model.pagination.pages)
+                            {
+                                <li><a onclick="SelectedPage(@(Model.pagination.page - 3))" >&laquo;</a></li>
+                                <li><a onclick="SelectedPage(@(Model.pagination.page - 2))" >@(Model.pagination.page - 2)</a></li>
+                                <li><a onclick="SelectedPage(@(Model.pagination.page - 1))" >@(Model.pagination.page - 1)</a></li>
+                                <li class="active"><a>@Model.pagination.page</a></li>
+                                <li class="disabled"><a>&raquo;</a></li>
+                            }
+                            else
+                            {
+                                <li><a onclick="SelectedPage(@(Model.pagination.page - 2))" >&laquo;</a></li>
+                                <li><a onclick="SelectedPage(@(Model.pagination.page - 1))" >@(Model.pagination.page - 1)</a></li>
+                                <li class="active"><a>@Model.pagination.page</a></li>
+                                <li><a onclick="SelectedPage(@(Model.pagination.page + 1))">@(Model.pagination.page + 1)</a></li>
+                                <li><a onclick="SelectedPage(@(Model.pagination.page + 2))">&raquo;</a></li>
+                            }*@
+                        </ul>
+                    </div>
+                }
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script>
+    function SelectedPage(page){
+        @*$(document).ajaxStart(function () {
+            $('#loading').html('@Html.Partial("Loading")');
+        });*@
+
+        var item = $("#itensPorPagina").val();
+
+        jQuery.ajax({
+            url: '@Model.pagination.link',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                'rows': '@Model.pagination.rows',
+                'pages': '@Model.pagination.pages',
+                'page': page,
+                'itens': '@Model.ItensString.Substring(1, Model.ItensString.Length - 1)',
+                'item': item
+            }),
+            dataType: "html",
+            success: function (result) {
+                @*$('#formDynamic').html('@Html.Partial("Loading")'.replace('"', '\''));*@
+                }
+        }).done(function (data) {
+            $('#@Model.id').html(data);
+            //$('#hiddenCount').val(String(parseInt(count) + 1));
+            //$('#loading').html("");
+        });
+    }
+
+    function ChangeItens(){
+        var item = $("#itensPorPagina").val();
+
+        jQuery.ajax({
+            url: '@Model.pagination.link',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                'rows': '@Model.pagination.rows',
+                'pages': '@Model.pagination.pages',
+                'page': '@Model.pagination.page',
+                'itens': '@Model.ItensString.Substring(1, Model.ItensString.Length - 1)',
+                'item': item
+            }),
+            dataType: "html",
+            success: function (result) {
+                @*$('#formDynamic').html('@Html.Partial("Loading")'.replace('"', '\''));*@
+                }
+        }).done(function (data) {
+            $('#@Model.id').html(data);
+            //$('#hiddenCount').val(String(parseInt(count) + 1));
+            //$('#loading').html("");
+        });
+    }
+</script>

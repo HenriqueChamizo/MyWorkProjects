@@ -1,0 +1,23 @@
+﻿@model GedScannerMVC.ClassView._HeaderGeral
+<div class="row">
+    @*<div class="col-md-12"><br /></div>*@
+    <div class="col-md-8">
+        @*<div class="row">*@
+            <div class="thumbContainer">
+                <img class="img-thumbnail" src="@Url.Content(Model.imageSrc)" style="width:100px;float:left" />
+            </div>
+            <div class="" style="float: left; margin-left: 15px;">
+                <h1 style="margin: 0;vertical-align: middle;display: table-cell;line-height: 100px;">
+                    @Model.title
+                    @if (Model.TitlePageSmall != null)
+                    {
+                        <small>Model.TitlePageSmall</small>
+                    }
+                </h1>
+                @*<h1 class="h1 title" style="margin: 0;vertical-align: middle;display: table-cell;line-height: 100px;">@Model.title</h1>*@
+            </div>
+        @*</div>*@
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>

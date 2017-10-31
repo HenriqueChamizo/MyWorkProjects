@@ -1,0 +1,14 @@
+S:\USUARIOS\Renne\Projetos\ExportFormat\Chamizo.Control\bin\Debug\Chamizo.Control.dll
+S:\USUARIOS\Renne\Projetos\ExportFormat\Chamizo.Control\bin\Debug\Chamizo.Control.pdb
+S:\USUARIOS\Renne\Projetos\ExportFormat\Chamizo.Control\bin\Debug\Chamizo.Class.dll
+S:\USUARIOS\Renne\Projetos\ExportFormat\Chamizo.Control\bin\Debug\Chamizo.Class.pdb
+S:\USUARIOS\Renne\Projetos\ExportFormat\Chamizo.Control\obj\Debug\Chamizo.Control.csprojResolveAssemblyReference.cache
+S:\USUARIOS\Renne\Projetos\ExportFormat\Chamizo.Control\obj\Debug\Chamizo.Control.dll
+S:\USUARIOS\Renne\Projetos\ExportFormat\Chamizo.Control\obj\Debug\Chamizo.Control.pdb
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Control\bin\Debug\Chamizo.Control.dll
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Control\bin\Debug\Chamizo.Control.pdb
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Control\bin\Debug\Chamizo.Class.dll
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Control\bin\Debug\Chamizo.Class.pdb
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Control\obj\Debug\Chamizo.Control.csprojResolveAssemblyReference.cache
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Control\obj\Debug\Chamizo.Control.dll
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Control\obj\Debug\Chamizo.Control.pdb

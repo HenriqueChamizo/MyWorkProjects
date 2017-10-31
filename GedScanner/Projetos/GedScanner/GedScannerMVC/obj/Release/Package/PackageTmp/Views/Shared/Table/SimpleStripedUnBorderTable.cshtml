@@ -1,0 +1,93 @@
+﻿@using GedScannerMVC.ClassView;
+@model TableOfWeb
+
+<table class="table table-striped">
+    <tr>
+        @foreach (TableColunas column in Model.columns)
+        {
+            <td tabindex="@column.tabindex" aria-controls="@column.aria_controls" rowspan="@column.rowspan"
+                    colspan="@column.colspan" aria-sort="@column.aria_sort" aria-label="@column.aria_label"
+                    style="@column.Style" class="@column.CssClass">
+                @column.Text
+            </td>
+        }
+    </tr>
+    @if (Model.rows.Count > 0)
+    {
+        bool even = true;
+        foreach (TableLinhas row in Model.rows)
+        {
+            even = !even;
+            <tr class="gradeA @row.CssClass @(!even ? "odd" : "even")" role="row"
+                    >
+                @foreach (TableCelulas cell in row.cells)
+                {
+                    if (cell.AjaxLink != null)
+                    {
+                        <td class="@cell.CssClass" style="@cell.Style">
+                            @Ajax.ActionLink(cell.Value, cell.AjaxLink.action, cell.AjaxLink.controller, cell.AjaxLink.route, cell.AjaxLink.ajaxOptions)
+                        </td>
+                    }
+                    else
+                    {
+                        if (cell.CheckboxSwitch)
+                        {
+                            <td class="@cell.CssClass" style="@cell.Style">
+                                <div class="material-switch pull-right">
+                                    <input id="@cell.ID" name="@cell.Name" type="checkbox" value="@(cell.Name.Split(new string[] { "-" }, StringSplitOptions.None)[1])"
+                                            @(Convert.ToBoolean(cell.Value) ? "checked='checked'" : "")>
+                                    <label for="@cell.ID" class="label-default"></label>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+
+                            if (cell.link == null)
+                            {
+                                <td class="@cell.CssClass" style="@cell.Style">
+                                    @cell.Value
+                                </td>
+                            }
+                            else
+                            {
+                                <td class="@cell.CssClass" style="@cell.Style">
+                                    @if (!string.IsNullOrEmpty(cell.link.href))
+                                    {
+                                        <a id="@cell.link.ID" href="@cell.link.href">@cell.Value</a>
+                                    }
+                                    else if (!string.IsNullOrEmpty(cell.link.url))
+                                    {
+                                        <a id="@cell.link.ID" href="@Url.Content(cell.link.url)">@cell.Value</a>
+                                    }
+                                    else if (!string.IsNullOrEmpty(cell.link.action) || !string.IsNullOrEmpty(cell.link.controller))
+                                    {
+                                        if (cell.link.route == null)
+                                        {
+                                            Html.ActionLink(cell.Value, cell.link.action, cell.link.controller, new { id = cell.link.ID });
+                                        }
+                                        else
+                                        {
+                                            <div>
+                                                @Html.ActionLink(cell.Value, cell.link.action, cell.link.controller, cell.link.route, new { id = cell.link.ID })
+                                            </div>
+                                        }
+                                    }
+                                </td>
+                            }
+                        }
+                    }
+                }
+            </tr>
+        }
+    }
+    else
+    {
+        <tr class="gradeA odd" role="row" colspan="@Model.columns.Count()">
+            <td class="sorting_1" colspan="@Model.columns.Count()" style="text-align: center">@Model.Empty</td>
+        </tr>
+    }
+</table>
+<script>
+    LoadInputs();
+</script>

@@ -1,0 +1,185 @@
+﻿@model GedScannerMVC.ClassView.Home
+@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GED - Login</title>
+    <link rel="icon" href="@Url.Content("~/Image/Logo/ged1-so-red.png")">
+
+    <link href="@Url.Content("~/Styles/Login.hcc.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/bootstrap/css/bootstrap.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Styles/INPUTHENRIQUE.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/plugins/jQuery/jquery-2.2.3.min.js")"></script>
+    <script src="@Url.Content("~/bootstrap/js/bootstrap.js")"></script>
+    <script src="@Url.Content("~/Scripts/INPUTHENRIQUE.js")"></script>
+
+    @*<script src="@Url.Content("~/bootstrap/js/npm.js")"></script>*@
+    @*<script src="@Url.Content("~/Scripts/Login.hcc.js")"></script>*@
+
+    <link href="@Url.Content("~/Styles/Particles.css")" rel="stylesheet">
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Particles.js")"></script>
+</head>
+<body>
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { @class = "form-control-group" }))
+    {
+        @Html.ValidationSummary(true)
+        <div class="container">
+            <div class="card-particles card-container">
+                <img id="profile-img" class="profile-img-card" src="@Url.Content("~/Image/Logo/ged1-red.png")" />
+                <p id="profile-name" class="profile-name-card"></p>
+                <form id="form1" runat="server" class="form-signin">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <div id="upLogin">
+                        @if (Model.panelLogin || Model.ErroLogin)
+                        {
+                            <div id="panelLogin">
+                                @*<label id="labelEmail">Usuário (Email)</label>*@
+                                @if (Model.ErroEmail)
+                                {
+                                    <label id="labelEmailErro" style="color:red">Campo Obrigatório!</label>
+                                }
+                                <div class="form-group">
+                                    @*<input type="text" class="form-control dirty" id="Firstname2">*@
+                                    <input id="inputEmail" class="form-control" type="text" name="email" autocomplete="off" />
+                                    @*<label for="Firstname2">Firstname</label>*@
+                                    <label id="labelEmail" for="inputEmail">Usuário (Email)</label>
+                                </div>
+                                @*<input id="inputEmail" class="form-control" type="text" name="email" />*@
+
+                                @*<label id="labelPassword">Senha</label>*@
+                                @if (Model.ErroSenha)
+                                {
+                                    <label id="labelPasswordErro" style="color:red">Campo Obrigatório!</label>
+                                }
+                                <div class="form-group">
+                                    @*<input type="text" class="form-control dirty" id="Firstname2">*@
+                                    <input id="inputPassword" class="form-control" type="password" name="senha" />
+                                    @*<label for="Firstname2">Firstname</label>*@
+                                    <label id="labelPassword" for="inputPassword">Senha</label>
+                                </div>
+                                @*<input id="inputPassword" class="form-control" type="password" name="senha" />*@
+                                @if (Model.ErroLogin)
+                                {
+                                    <label id="loginErro" style="color:red;">Usuário ou senha incorretos!</label>
+                                }
+                            </div>
+                        }
+
+                        @if (Model.panelSelCliente)
+                        {
+                            <link rel="stylesheet" href="@Url.Content("~/plugins/select2/select2.min.css")">
+                            @*<link rel="stylesheet" href="@Url.Content("~/dist/css/AdminLTE.min.css")">*@
+                            <style>
+                                .select2-container--default .select2-selection--single, .select2-selection .select2-selection--single {
+                                    border: 0px solid #d2d6de;
+                                    border-radius: 0;
+                                    border-bottom: 1px solid #d2d6de;
+                                    padding: 6px 12px;
+                                    height: 34px;
+                                    background: transparent;
+                                }
+                                .select2-container .select2-selection--single .select2-selection__rendered {
+                                    padding-right: 10px;
+                                }
+                                .select2-container--default .select2-selection--single .select2-selection__arrow {
+                                    height: 28px;
+                                    right: 3px;
+                                }
+                                .select2-container--default .select2-selection--single .select2-selection__arrow b {
+                                    margin-top: 0;
+                                }
+                                .select2-container .select2-selection--single .select2-selection__rendered {
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    height: auto;
+                                    margin-top: -4px;
+                                }
+                                .select2-container--default.select2-container--open {
+                                    border-color: #3c8dbc;
+                                }
+                                .select2-dropdown {
+                                    border: 1px solid #d2d6de;
+                                    border-radius: 0;
+                                }
+                                .select2-dropdown .select2-search__field, .select2-search--inline .select2-search__field {
+                                    border: 1px solid #d2d6de;
+                                }
+                                .select2-container--default .select2-results__option[aria-selected=true], .select2-container--default .select2-results__option[aria-selected=true]:hover {
+                                    color: #444;
+                                }
+                                .select2-container--default .select2-results__option[aria-selected=true] {
+                                    background-color: #ddd;
+                                }
+                                .select2-results__option {
+                                    padding: 6px 12px;
+                                    user-select: none;
+                                    -webkit-user-select: none;
+                                }
+                                .select2-container--default .select2-results__option[aria-disabled=true] {
+                                    color: #999;
+                                }
+                                .select2-results__option {
+                                    padding: 6px 12px;
+                                    user-select: none;
+                                    -webkit-user-select: none;
+                                }
+                                .select2-container--default .select2-results__option--highlighted[aria-selected] {
+                                    background-color: #3c8dbc;
+                                    color: white;
+                                }
+                                .select2-results__option {
+                                    padding: 6px 12px;
+                                    user-select: none;
+                                    -webkit-user-select: none;
+                                }
+                                .select2-container {
+                                    box-sizing: border-box;
+                                    display: inline-block;
+                                    margin: 0;
+                                    z-index: 3;
+                                    position: relative !important;
+                                    vertical-align: middle;
+                                }
+                            </style>
+
+                            <link rel="stylesheet" href="@Url.Content("~/Styles/INPUTHENRIQUE.CSS")">
+                            <div id="panelSelCliente">
+                                <div class="form-group">
+                                    <label id="lblSelCliente">Selecione um cliente para começar</label>
+                                    <select id="ddlClientes" class="form-control select2" style="width: 100%" name="cliente">
+                                        @foreach (Model.Cliente cli in Model.clientes)
+                                        {
+                                            <option value="@cli.CLI_IND.ToString()">@cli.CLI_RAZAOSOCIAL</option>
+                                        }
+                                    </select>
+                                </div>
+
+                                @if (Model.ErroBanco)
+                                {
+                                    <label id="bancoErro" style="color:red">Não existe banco de dados cadastrado nesta empresa!</label>
+                                }
+                                <input id="errobanco" type="hidden" value="@Model.ErroBanco.ToString()" />
+                            </div>
+                            <script src="@Url.Content("~/plugins/select2/select2.full.min.js")"></script>
+                            <script>
+                                $(function () {
+                                    //Initialize Select2 Elements
+                                    $(".select2").select2();
+                                });
+                            </script>
+                        }
+                        <br />
+                        <input id="btnEntrar" class="btn btn-lg btn-primary btn-block btn-signin" value="@Model.btnValue" type="submit" />
+                    </div>
+                </form><!-- /form -->
+            </div><!-- /card-container -->
+        </div>
+    }
+
+    <div id="particles-js"></div>
+</body>
+</html>

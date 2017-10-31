@@ -1,0 +1,32 @@
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\DAO.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\DAO.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\Model.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\Model.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.csprojResolveAssemblyReference.cache
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\Persits.PDF.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\DAO.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\DAO.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\Model.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\Persits.PDF.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\bin\Release\Model.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.csprojResolveAssemblyReference.cache
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\DAO.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\DAO.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\Model.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\Persits.PDF.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\Model.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.csprojResolveAssemblyReference.cache
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\DAO.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\DAO.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\Model.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\Persits.PDF.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\bin\Release\Model.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.csprojResolveAssemblyReference.cache
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\DAO\obj\Release\DAO.pdb

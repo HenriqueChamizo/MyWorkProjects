@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GED - Login</title>
+    <link rel="icon" href="Image/Logo/ged1-so-red.png">
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/npm.js"></script>
+    <link href="Styles/Login.hcc.css" rel="stylesheet" />
+    <script src="Scripts/Login.hcc.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        @Html.ValidationSummary(true)
+        Model.LoginsInternos login = ViewBag.login as Model.LoginsInternos;
+        <div class="container">
+            <div class="card card-container">
+                <img id="profile-img" class="profile-img-card" src="Image/Logo/ged1-red.png" />
+                <p id="profile-name" class="profile-name-card"></p>
+                <form id="form1" runat="server" class="form-signin">
+                    <span id="reauth-email" class="reauth-email"></span>
+                
+                    <div id="upLogin">
+                          @if (login == null)
+                          {
+                            <div id="panelLogin">
+                                <label id="labelEmail">Usuário (Email)</label>
+                                <label id="labelEmailErro" style="color:red; display:none">Campo Obrigatório!</label>
+                                <input id="inputEmail" class="form-control" type="text" />
+                                <label id="labelPassword">Senha</label>
+                                <label id="labelPasswordErro" style="color:red; display:none">Campo Obrigatório!</label>
+                                <input id="inputPassword" class="form-control" type="password" />
+                                <input id="btnEntrar" class="btn btn-lg btn-primary btn-block btn-signin" value="Entrar" type="submit" />
+                                <label id="loginErro" style="color:red; display:none">Usuário ou senha incorretos!</label>
+                            </div>
+                          }
+                          else if (login.cliente == null)
+                          {
+                            <div id="panelSelCliente">
+                                <label id="lblSelCliente">Selecione um cliente para começar</label>
+                                <select id="ddlClientes" class="form-control"></select>
+                                <br />
+                                <input id="btnSelecionar" class="btn btn-lg btn-primary btn-block btn-signin" value="Selecionar" type="submit" />
+                                <label id="bancoErro" style="color:red; display:none">Não existe banco de dados cadastrado nesta empresa!</label>
+                            </div>
+                          }
+                    </div>
+                </form><!-- /form -->
+            </div><!-- /card-container -->
+        </div>
+    }
+</body>
+</html>

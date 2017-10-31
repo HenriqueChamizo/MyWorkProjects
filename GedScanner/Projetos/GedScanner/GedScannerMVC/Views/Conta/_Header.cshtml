@@ -1,0 +1,42 @@
+﻿@model GedScannerMVC.ClassView.HeaderConta
+<div class="row">
+    @*<div class="col-md-12"><br /></div>*@
+    <div class="col-md-8">
+        <div class="thumbContainer">
+            <img class="img-thumbnail" src="@Url.Content("~/Image/Paginas/Conta-Gray.png")" style="width:100px;float:left" />
+        </div>
+        <div class="" style="float: left; margin-left: 15px;">
+            <h1 @*class="h1 title"*@ style="margin: 0;vertical-align: middle;display: table-cell;line-height: 100px;">Contas</h1>
+        </div>
+        @*<div class="row">
+            <div class="col-md-2">
+                <img src="@Url.Content("~/Image/Paginas/Conta-Gray.png")" style="width:100%" />
+            </div>
+            <div class="col-md-9" style="float: left; margin-left: 15px;">
+                <h1 class="h1 title" style="margin: 0;vertical-align: middle;display: table-cell;line-height: 100px;"> Contas</h1>
+            </div>
+        </div>*@
+    </div>
+    <div class="col-md-3">
+        <div class="row">
+            <div class="col-sm-12"><br /></div>
+            <div class="col-sm-12">
+                <h3 style="margin-top: 0px">
+                    <label>
+                        @(string.IsNullOrEmpty(Model.planoAtual) ? "Nenhum Plano de Contas aberto!" : "Plano de Contas atual: " )
+                    </label>
+                </h3>
+            </div>
+            <div class="col-sm-12">
+                <h3 style="margin-top: 0px">
+                    <b>
+                        <label class="label label-default">
+                            @(string.IsNullOrEmpty(Model.planoAtual) ? "Insira um novo Plano de Contas para continuar" : Model.planoAtual )
+                        </label>
+                    </b>
+                </h3>
+                <input id="hiddenPlanoInd" type="hidden" value="@(string.IsNullOrEmpty(Model.planoAtual) ? "-1" : Model.indPlanoAtual.ToString())" />
+            </div>
+        </div>
+    </div>
+</div>

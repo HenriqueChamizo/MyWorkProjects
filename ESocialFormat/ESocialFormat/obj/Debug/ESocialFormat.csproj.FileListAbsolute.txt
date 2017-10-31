@@ -1,0 +1,8 @@
+S:\USUARIOS\Renne\Projetos\ESocialFormat\ESocialFormat\bin\Debug\ESocialFormat.exe.config
+S:\USUARIOS\Renne\Projetos\ESocialFormat\ESocialFormat\bin\Debug\ESocialFormat.exe
+S:\USUARIOS\Renne\Projetos\ESocialFormat\ESocialFormat\bin\Debug\ESocialFormat.pdb
+S:\USUARIOS\Renne\Projetos\ESocialFormat\ESocialFormat\obj\Debug\ESocialFormat.ESocial.resources
+S:\USUARIOS\Renne\Projetos\ESocialFormat\ESocialFormat\obj\Debug\ESocialFormat.Properties.Resources.resources
+S:\USUARIOS\Renne\Projetos\ESocialFormat\ESocialFormat\obj\Debug\ESocialFormat.csproj.GenerateResource.Cache
+S:\USUARIOS\Renne\Projetos\ESocialFormat\ESocialFormat\obj\Debug\ESocialFormat.exe
+S:\USUARIOS\Renne\Projetos\ESocialFormat\ESocialFormat\obj\Debug\ESocialFormat.pdb

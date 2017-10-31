@@ -1,0 +1,116 @@
+﻿@model GedScannerMVC.ClassView.Lote 
+<div class="row">
+    <div class="col-sm-12"><br /></div>
+    <div class="col-sm-12">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active">
+                @{
+                    GedScannerMVC.ClassFrm.FrmLoteLote lote = new GedScannerMVC.ClassFrm.FrmLoteLote();
+                    lote.indice = Model.detail.indice.Replace("Índice: ", "");
+                    lote.finalizar = Model.detail.finalizar;
+                    lote.enviar = Model.detail.enviar;
+                }
+                @Ajax.ActionLink("Lote", "Lote", "Lote", lote, new AjaxOptions()
+                   {
+                       HttpMethod = "post",
+                       InsertionMode = InsertionMode.Replace,
+                       UpdateTargetId = "LoteAtual"
+                   })
+            </li>
+            <li role="presentation">
+                @{
+                    GedScannerMVC.ClassFrm.FrmLoteLoteArquivo loteArquivo = new GedScannerMVC.ClassFrm.FrmLoteLoteArquivo();
+                    loteArquivo.indice = Model.detail.indice.Replace("Índice: ", "");
+                    loteArquivo.finalizar = Model.detail.finalizar;
+                    loteArquivo.enviar = Model.detail.enviar;
+                }
+                @Ajax.ActionLink("Arquivos", "LoteArquivo", "Lote", loteArquivo, new AjaxOptions()
+                   {
+                       HttpMethod = "post",
+                       InsertionMode = InsertionMode.Replace,
+                       UpdateTargetId = "LoteAtual"
+                   })
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+        <div class="col-sm-12">
+            <b>
+                <label id="lblIndice" class="h3 left">@Model.detail.indice</label>
+                <input id="indice" name="indice" type="hidden" value="@Model.detail.indice" />
+            </b>
+        </div>
+        <div class="col-sm-8">
+            <div class="form-group floating-label">
+                <input id="descricao" name="descricao" type="text" class="form-control" value="@Model.detail.descricao" @(Model.detail.disabledAll ? "disabled='disabled'" : "") />
+                <label id="lblDescricao" for="descricao">Descrição </label>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group floating-label">
+                <input id="txtdatainicio" name="txtdatainicio" type="text" class="form-control" value="@Model.detail.datainicio" disabled="disabled" />
+                <label id="lblDatainicio" for="txtdatainicio">Data de Criação </label>
+                <input id="datainicio" name="datainicio" type="hidden" value="@Model.detail.datainicio" />
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <label>
+                @if (Model.detail.ckbFinalizarVisible)
+                {
+                    if (Model.detail.ckbFinalizarEnable)
+                    {
+                        if (Model.detail.disabledAll)
+                        {
+                            @Html.CheckBox("finalizar", Model.detail.finalizar, new { @class = "checkbox-inline", style = "margin-top:-4px", disabled = "disabled" });
+                        }
+                        else
+                        {
+                            @Html.CheckBox("finalizar", Model.detail.finalizar, new { @class = "checkbox-inline", style = "margin-top:-4px" });
+                        }
+                    }
+                    else
+                    {
+                        @Html.CheckBox("finalizar", Model.detail.finalizar, new { @class = "checkbox-inline", style = "margin-top:-4px", disabled = "disabled" });
+                    }
+                    @(" Finalizar Lote")
+                }
+            </label>
+        </div>
+        <div class="col-sm-3">
+            <label>
+                @if (Model.detail.ckbEnviarVisible)
+                {
+                    if (Model.detail.ckbEnviarEnable)
+                    {
+                        if (Model.detail.disabledAll)
+                        {
+                            @Html.CheckBox("enviar", Model.detail.enviar, new { @class = "checkbox-inline", style = "margin-top:-4px", disabled = "disabled" });
+                        }
+                        else
+                        {
+                            @Html.CheckBox("enviar", Model.detail.enviar, new { @class = "checkbox-inline", style = "margin-top:-4px" });
+                        }
+                    }
+                    else
+                    {
+                        @Html.CheckBox("enviar", Model.detail.enviar, new { @class = "checkbox-inline", style = "margin-top:-4px", disabled = "disabled" });
+                    }
+                    @(" Lote Enviado")
+                }
+            </label>
+        </div>
+        <div class="col-sm-12"><br /></div>
+    <div class="col-sm-12">
+        <div style="float:right;min-height:35px">
+            <input id="btnSalvar" type="submit" value="Salvar" class="btn btn-default" @(Model.detail.disabledAll ? "disabled='disabled'" : "") />
+            <label id="lblErro" style="color:red">@Model.Erro</label>
+            <input id="edit" name="edit" value="@Model.detail.edit.ToString()" type="hidden" />
+        </div>
+    </div>
+</div>
+
+<script>
+    LoadInputs();
+</script>

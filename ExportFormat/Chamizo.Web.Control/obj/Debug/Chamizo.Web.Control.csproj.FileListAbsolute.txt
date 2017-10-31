@@ -1,0 +1,7 @@
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Web.Control\bin\Debug\Chamizo.Web.Control.dll
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Web.Control\bin\Debug\Chamizo.Web.Control.pdb
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Web.Control\bin\Debug\System.Net.Http.dll
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Web.Control\bin\Debug\System.Net.Http.xml
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Web.Control\obj\Debug\Chamizo.Web.Control.dll
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Web.Control\obj\Debug\Chamizo.Web.Control.pdb
+D:\Projetos\SemTeamFundation\ExportFormat\Chamizo.Web.Control\obj\Debug\Chamizo.Web.Control.csprojResolveAssemblyReference.cache

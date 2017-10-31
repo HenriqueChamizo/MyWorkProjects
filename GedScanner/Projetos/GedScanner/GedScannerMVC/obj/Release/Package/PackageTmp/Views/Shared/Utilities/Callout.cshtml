@@ -1,0 +1,10 @@
+﻿@model GedScannerMVC.ClassView.Callout
+
+<div class="callout callout-@(Model.type_color)">
+    @if (!string.IsNullOrEmpty(Model.title))
+    {
+        <h4>@Model.title</h4>
+    }
+
+    <p>@Model.text</p>
+</div>

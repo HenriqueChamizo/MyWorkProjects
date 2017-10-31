@@ -1,0 +1,443 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable
+  DTS:refId="Package" xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:CreatorName="PROG01\henriquec"
+  DTS:CreatorComputerName="PROG01"
+  DTS:CreationDate="9/29/2017 11:21:30 AM"
+  DTS:PackageType="5"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{FE7D6BE9-F48F-4CF0-B359-2BC6D2C8D9A6}"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="1046"
+  DTS:ObjectName="ToGo"
+  DTS:DTSID="{1853B0F0-90B3-41C0-8A20-BFD3D74F4A9F}"
+  DTS:CreationName="SSIS.Package.3">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ConnectionBack]"
+      DTS:ObjectName="ConnectionBack"
+      DTS:DTSID="{B19BA57E-797C-4D8D-98FD-AD417DDC3C74}"
+      DTS:CreationName="OLEDB">
+      <DTS:PropertyExpression
+        DTS:Name="InitialCatalog">@[$Project::InitialCatalogBack]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Password">@[$Project::PasswordBack]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[$Project::DataSourceBack]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="UserName">@[$Project::UserIDBack]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=192.168.1.78;User ID=sa;Initial Catalog=assepontocontrole;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl88Fhx6fRkqVGljWa3fkwAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACAy7wuuqMfMbm8ccO3jzACNXTkP/i2slky1BEmucTFJAAAAAAOgAAAAAIAACAAAACsUqu5JZ8iUQrzwjPnHKxEkurr3MJcjgLLQKB7kv2bNCAAAADpxfIm04grY/0AebdD4Qdq6Vqp4ByI6EQx4BKHFEpzAkAAAABwtjw9IYXkAQIKVBp1x+QW9vqyAjQY42QYaAs4LomajK5bLVd1/ZT2cio7tzTIFjcqTnh/a/gTk5VOkSjjcU5P</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ConnectionGo]"
+      DTS:ObjectName="ConnectionGo"
+      DTS:DTSID="{D3F93590-F67D-41F4-B8C2-0EACBF04C6D6}"
+      DTS:CreationName="OLEDB">
+      <DTS:PropertyExpression
+        DTS:Name="InitialCatalog">@[$Project::InitialCatalogGo]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Password">@[$Project::PasswordGo]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[$Project::DataSourceGo]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="UserName">@[$Project::UserIDGo]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=200.170.88.138;User ID=assecont3730;Initial Catalog=assecont1;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl88Fhx6fRkqVGljWa3fkwAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB67c0LYVcrjKTd5f0IeK5ErIUNr2B8DBlpqEk8MVY0JwAAAAAOgAAAAAIAACAAAACnckl2mAcmEGkdUrRjA23KPJhTCWIOoR3MIVesdXcouSAAAAD5LSduPf/oxqtnHesEzzqnel+Wby+GvSgybNzbk7wqgEAAAABbzvHT6gUZI5DeItJXQlvAUk62Xx4HXjbcfRGk1lh+/3tcwnW+b+1NZW4/KESBV4QJj8bzv6iRkKNXmd2VIQSb</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\structure"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="structure"
+      DTS:DTSID="{1718DD28-9C2C-4BB7-B123-3E84FFCD9104}"
+      DTS:Description="Data Flow Task"
+      DTS:CreationName="SSIS.Pipeline.3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\structure\SourceGO"
+              name="SourceGO"
+              componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+              description="OLE DB Source"
+              usesDispositions="true"
+              version="7"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7">
+              <properties>
+                <property
+                  name="CommandTimeout"
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out.">0</property>
+                <property
+                  name="OpenRowset"
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."></property>
+                <property
+                  name="OpenRowsetVariable"
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."></property>
+                <property
+                  name="SqlCommand"
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from sys.all_objects where type_desc = 'USER_TABLE'</property>
+                <property
+                  name="SqlCommandVariable"
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."></property>
+                <property
+                  name="DefaultCodePage"
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source.">1252</property>
+                <property
+                  name="AlwaysUseDefaultCodePage"
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data.">false</property>
+                <property
+                  name="AccessMode"
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  typeConverter="AccessMode">2</property>
+                <property
+                  name="ParameterMapping"
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\structure\SourceGO.Connections[OleDbConnection]"
+                  name="OleDbConnection"
+                  description="The OLE DB runtime connection used to access the database."
+                  connectionManagerID="Package.ConnectionManagers[ConnectionGo]"
+                  connectionManagerRefId="Package.ConnectionManagers[ConnectionGo]" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\structure\SourceGO.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[name]"
+                      name="name"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[name]"
+                      length="128"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[name]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[object_id]"
+                      name="object_id"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[object_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[object_id]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[principal_id]"
+                      name="principal_id"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[principal_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[principal_id]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[schema_id]"
+                      name="schema_id"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[schema_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[schema_id]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[parent_object_id]"
+                      name="parent_object_id"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[parent_object_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[parent_object_id]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[type]"
+                      name="type"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[type]"
+                      length="2"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[type]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[type_desc]"
+                      name="type_desc"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[type_desc]"
+                      length="60"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[type_desc]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[create_date]"
+                      name="create_date"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[create_date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[create_date]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[modify_date]"
+                      name="modify_date"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[modify_date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[modify_date]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[is_ms_shipped]"
+                      name="is_ms_shipped"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[is_ms_shipped]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[is_ms_shipped]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[is_published]"
+                      name="is_published"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[is_published]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[is_published]" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[is_schema_published]"
+                      name="is_schema_published"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Output].Columns[is_schema_published]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[is_schema_published]" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[name]"
+                      name="name"
+                      dataType="wstr"
+                      length="128" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[object_id]"
+                      name="object_id"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[principal_id]"
+                      name="principal_id"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[schema_id]"
+                      name="schema_id"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[parent_object_id]"
+                      name="parent_object_id"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[type]"
+                      name="type"
+                      dataType="str"
+                      length="2"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[type_desc]"
+                      name="type_desc"
+                      dataType="wstr"
+                      length="60" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[create_date]"
+                      name="create_date"
+                      dataType="dbTimeStamp" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[modify_date]"
+                      name="modify_date"
+                      dataType="dbTimeStamp" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[is_ms_shipped]"
+                      name="is_ms_shipped"
+                      dataType="bool" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[is_published]"
+                      name="is_published"
+                      dataType="bool" />
+                    <externalMetadataColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Output].ExternalColumns[is_schema_published]"
+                      name="is_schema_published"
+                      dataType="bool" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output]"
+                  name="OLE DB Source Error Output"
+                  isErrorOut="true">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[name]"
+                      name="name"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[name]"
+                      length="128"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[object_id]"
+                      name="object_id"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[object_id]"
+                      dataType="i4" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[principal_id]"
+                      name="principal_id"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[principal_id]"
+                      dataType="i4" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[schema_id]"
+                      name="schema_id"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[schema_id]"
+                      dataType="i4" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[parent_object_id]"
+                      name="parent_object_id"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[parent_object_id]"
+                      dataType="i4" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[type]"
+                      name="type"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[type]"
+                      length="2"
+                      dataType="str"
+                      codePage="1252" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[type_desc]"
+                      name="type_desc"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[type_desc]"
+                      length="60"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[create_date]"
+                      name="create_date"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[create_date]"
+                      dataType="dbTimeStamp" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[modify_date]"
+                      name="modify_date"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[modify_date]"
+                      dataType="dbTimeStamp" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[is_ms_shipped]"
+                      name="is_ms_shipped"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[is_ms_shipped]"
+                      dataType="bool" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[is_published]"
+                      name="is_published"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[is_published]"
+                      dataType="bool" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[is_schema_published]"
+                      name="is_schema_published"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[is_schema_published]"
+                      dataType="bool" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      lineageId="Package\structure\SourceGO.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="120,42"
+          Id="Package\structure"
+          TopLeft="263,130" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\structure">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="125,42"
+          Id="Package\structure\SourceGO"
+          TopLeft="66,46" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\structure\SourceGO">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

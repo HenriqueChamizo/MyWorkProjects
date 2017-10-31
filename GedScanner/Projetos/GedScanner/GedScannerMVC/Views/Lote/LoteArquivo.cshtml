@@ -1,0 +1,69 @@
+﻿@model GedScannerMVC.ClassView.Lote
+
+<div class="row">
+    <div class="col-sm-12"><br /></div>
+    <div class="col-sm-12">
+        <ul class="nav nav-tabs">
+
+            <li role="presentation">
+                @{
+                    GedScannerMVC.ClassFrm.FrmLoteLote lote = new GedScannerMVC.ClassFrm.FrmLoteLote();
+                    lote.indice = Model.detail.indice.Replace("Índice: ", "");
+                    lote.finalizar = Model.detail.finalizar;
+                    lote.enviar = Model.detail.enviar;
+                }
+                @Ajax.ActionLink("Lote", "Lote", "Lote", lote, new AjaxOptions()
+                {
+                    HttpMethod = "post",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "LoteAtual"
+                })
+            </li>
+            <li role="presentation" class="active">
+                @{
+                    GedScannerMVC.ClassFrm.FrmLoteLoteArquivo loteArquivo = new GedScannerMVC.ClassFrm.FrmLoteLoteArquivo();
+                    loteArquivo.indice = Model.detail.indice.Replace("Índice: ", "");
+                    loteArquivo.finalizar = Model.detail.finalizar;
+                    loteArquivo.enviar = Model.detail.enviar;
+                }
+                @Ajax.ActionLink("Arquivos", "LoteArquivo", "Lote", loteArquivo, new AjaxOptions()
+                {
+                    HttpMethod = "post",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "LoteAtual"
+                })
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="LoteListas">
+    <div class="row">
+        <div class="col-sm-12"><br /></div>
+        <div class="col-sm-12">
+            <div style="float:right;min-height:35px">
+                @using (Html.BeginForm("Novo", "Arquivo", FormMethod.Post))
+                {
+                    <input type="hidden" id="hidden" name="hidden" value="@Model.detail.indice" />
+                    <input type="submit" class="btn btn-default" value="Adicionar Arquivos" />
+                }
+            </div>
+        </div>
+        <div class="col-sm-12"><br /></div>
+        <div class="col-sm-12">
+            <div id="LoteListas" class="box-body no-padding">
+                @Html.Partial("Table", Model.loteArquivo.tableNClass)
+            </div>
+        </div>
+        <div class="col-sm-12"><br /></div>
+        <div class="col-sm-12">
+            <div id="LoteListas" class="box-body no-padding">
+                @Html.Partial("Table", Model.loteArquivo.tableClass)
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    LoadInputs();
+</script>

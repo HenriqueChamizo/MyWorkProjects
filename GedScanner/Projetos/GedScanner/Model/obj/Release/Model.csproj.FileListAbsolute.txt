@@ -1,0 +1,24 @@
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Release\Model.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Release\Model.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.dll
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.pdb
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\Projetos\SemTeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Release\Persits.PDF.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Release\Model.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Release\Model.pdb
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\bin\Release\Persits.PDF.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.dll
+D:\Projetos\TeamFundation\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Release\Model.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Release\Model.pdb
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Release\Persits.PDF.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.dll
+D:\BitBucket\Assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Release\Model.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Release\Model.pdb
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\bin\Release\Persits.PDF.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.dll
+C:\Disco D\BitBucket\assecont\Projetos\GedScanner\Projetos\GedScanner\Model\obj\Release\Model.pdb

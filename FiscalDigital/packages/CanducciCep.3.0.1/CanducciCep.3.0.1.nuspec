@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CanducciCep</id>
+    <version>3.0.1</version>
+    <title>Canducci CEP</title>
+    <authors>Canducci</authors>
+    <owners>Canducci</owners>
+    <projectUrl>https://github.com/netdragoon/tutorial/blob/master/READMECEP.md</projectUrl>
+    <iconUrl>http://i1194.photobucket.com/albums/aa377/netdragoon1/1451501901_send-mail-circle_zps7rugskgd.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Canducci CEP</description>
+    <summary />
+    <releaseNotes>Adição do método Parse
+Melhoramento do método TryParse
+Normalização Parse e TryParse</releaseNotes>
+  </metadata>
+</package>

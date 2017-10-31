@@ -1,0 +1,93 @@
+﻿@using GedScannerMVC.ClassView;
+@model Conta
+@{
+    ViewBag.Title = "Tipo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    @Html.Partial("_HeaderGeral", new _HeaderGeral() { imageSrc = "~/Image/Paginas/Conta-gray.png", title = "Tipos de Contas", TitlePageSmall = null })
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-primary">
+                <!-- form start -->
+                @using (Html.BeginForm("SalvarTipo", "Conta", FormMethod.Post))
+                {
+                    Html.ValidationSummary(true);
+                    <div class="box-header with-border">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                @if (Model.tableModel != null)
+                                {
+                                    <div style="float:left;min-height:35px;">
+                                        @Html.ActionLink("Novo Tipo", "NovoTipo", null, new { @class = "btn btn-default" })
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body @(Model.tableModel != null ? "no-padding" : "")">
+                        <div id="Contas">
+                            <div class="row">
+                                @if (Model.tableModel != null)
+                                {
+                                    <div class="col-sm-12" id="TableContaTipo">
+                                        @*@Html.Partial("TableOfWeb", Model.table)*@
+                                        @Html.Partial("Table", Model.tableModel)
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="col-sm-12">
+                                        <label id="lblPlanoIndice" class="h3 left">@Model.indice</label>
+                                        <input id="indice" name="indice" type="hidden" value="@Model.indice" />
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="form-group floating-label">
+                                                    <input id="txtclassificador" name="classificacao" type="text" class="form-control" value="@Model.tipo.CONTP_CLASSIFICADOR" required />
+                                                    <label id="lblClassificador" for="txtclassificador">Classificador </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group floating-label">
+                                                    <input id="descricao" name="descricao" type="text" class="form-control" value="@Model.tipo.CONTP_DESCRICAO" required />
+                                                    <label id="lblDescricao" for="descricao">Descrição </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="form-group floating-label">
+                                                    <input id="txtdatainicio" name="txtdatainicio" type="text" class="form-control" value="@Model.datainicio" disabled="disabled" />
+                                                    <label id="lblDatainicio" for="txtdatainicio">Data de Criação </label>
+                                                    <input id="datainicio" name="datainicio" type="hidden" value="@Model.datainicio" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12"><br /></div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    if (Model.tableModel == null)
+                    {
+                        <div class="box-footer">
+                            <div style="text-align:right">
+                                <input id="btnSalvar" type="submit" value="Salvar" class="btn btn-default" />
+                            </div>
+                            <label id="lblErro" style="color:red">@Model.Erro</label>
+                            <input id="edit" name="edit" value="@Model.edit.ToString()" type="hidden" />
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+

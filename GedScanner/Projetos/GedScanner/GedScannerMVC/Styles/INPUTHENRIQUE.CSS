@@ -1,0 +1,151 @@
+.form-control {
+  padding: 0;
+  height: 37px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom-color: rgba(12, 12, 12, 0.12);
+  background: transparent;
+  color: #0c0c0c;
+  font-size: 16px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  outline: 0;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 19px;
+}
+.form-group, .form-inline .form-group {
+  padding-top: 16px;
+}
+label {
+  font-weight: 400;
+}
+/*MANTEM A COR DO LABEL*/
+.form-group .form-control:focus ~ label {
+  color: #0059b6;
+  opacity: 1;
+}
+/*MANTEM LABEL OPACA*/
+.form-group .form-control ~ label {
+  top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  opacity: 0.5;
+}
+/*MANTEM O LABEL EM CIMA DO INPUT*/
+.form-group .form-control ~ label,
+.form-group .form-control ~ .form-control-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+/*MANTEM O EFEITO DE VEM E VAI DO LABEL*/
+.form-group .form-control:not(.static) ~ label,
+.form-group .form-control:not(.static) ~ .form-control-line {
+  -webkit-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*TEM QUE FICAR AQUI SE NÃO NÃO FUNCIONA*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+/*MANTEM O LABEL EM CIMA DO INPUT, SE NÃO TIVER ISSO, ELE SIMPLESMENTE FICA NA PARTE DE CIMA*/
+.form-control-group .form-control ~ label {
+  top: 19px;
+  font-size: 16px;
+}
+/*FAZ object MOVIMENTO DO LABEL PARA CIMA*/
+.form-control-group .form-control:focus ~ label,
+.form-control-group .form-control.dirty ~ label {
+  top: 0px;
+  font-size: 12px !important;
+}
+
+
+.select2:focus ~ label {
+  color: #0059b6;
+  opacity: 1;
+}
+
+.select2 ~ label {
+  top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.select2 ~ label,
+.select2 ~ .form-control-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.select2:not(.static) ~ label,
+.select2:not(.static) ~ .select2-line {
+  -webkit-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.select2 ~ label {
+  top: 19px;
+  font-size: 16px;
+}
+
+.select2:focus ~ label,
+.select2.dirty ~ label {
+  top: 0px;
+  font-size: 12px !important;
+}
+
+
+
+.select2-selection:focus ~ label {
+  color: #0059b6;
+  opacity: 1;
+}
+
+.select2-selection ~ label {
+  top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.select2-selection ~ label,
+.select2-selection ~ .form-control-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.select2-selection:not(.static) ~ label,
+.select2-selection:not(.static) ~ .select2-line {
+  -webkit-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.select2-selection ~ label {
+  top: 19px;
+  font-size: 16px;
+}
+
+.select2-selection:focus ~ label,
+.select2-selection.dirty ~ label {
+  top: 0px;
+  font-size: 12px !important;
+}

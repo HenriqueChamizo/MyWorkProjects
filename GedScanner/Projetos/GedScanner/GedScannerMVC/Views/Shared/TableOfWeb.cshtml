@@ -1,0 +1,216 @@
+﻿@using GedScannerMVC.ClassView;
+@model TableOfWeb
+
+@{
+    <link href="@Url.Content("~/Styles/Structure.table.hcc.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Styles/Themes.hcc.css")" rel="stylesheet" />
+    if (Model.CheckboxSwitch)
+    {
+        <link href="@Url.Content("~/Styles/Material-Switch.hcc.css")" rel="stylesheet" />
+    }
+    <div class="row">
+        <div class="col-sm-12"><br /></div>
+        <div class="col-sm-12" id="panel">
+            <div class="panel-hcc panel-hcc-default" id="panel-warning">
+                <div class="panel-hcc-heading">
+                    <div class="panel-hcc-ajust">
+                        <div class="row">
+                            <div @(string.IsNullOrEmpty(Model.RightTitle) && string.IsNullOrEmpty(Model.RightValue) ? "class=col-sm-12" : "class=col-sm-6")>
+                                @if (!string.IsNullOrEmpty(Model.LeftTitle) && string.IsNullOrEmpty(Model.LeftValue))
+                                {
+                                    <b>@Model.LeftTitle</b>
+                                }
+                                else if (!string.IsNullOrEmpty(Model.LeftTitle) && !string.IsNullOrEmpty(Model.LeftValue))
+                                {
+                                    <b>@(Model.LeftTitle + ": ")</b>@Model.LeftValue
+                                }
+                            </div>
+                            @if (!string.IsNullOrEmpty(Model.RightTitle) && !string.IsNullOrEmpty(Model.RightValue))
+                            {
+                                <div class="col-sm-6">
+                                    @if (!string.IsNullOrEmpty(Model.RightTitle) && string.IsNullOrEmpty(Model.RightValue))
+                                    {
+                                        <b>@Model.RightTitle</b>
+                                    }
+                                    else if (!string.IsNullOrEmpty(Model.RightTitle) && !string.IsNullOrEmpty(Model.RightValue))
+                                    {
+                                        <b>@(Model.RightTitle + ": ")</b>@Model.RightValue
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-hcc-body">
+                    @*<div class="row">*@
+                        <div class="head" style="font-weight: bold;text-align: center;">
+                            @foreach (TableColunas column in Model.columns)
+                            {
+                                <div tabindex="@column.tabindex" aria-controls="@column.aria_controls" rowspan="@column.rowspan"
+                                    colspan="@column.colspan" aria-sort="@column.aria_sort" aria-label="@column.aria_label"
+                                    style="@column.Style" class="@column.CssClass">
+                                    @column.Text
+                                </div>
+                            }
+                        </div>
+                        <div class="body">
+                            @if (Model.rows.Count > 0)
+                            {
+                                bool even = true;
+                                foreach (TableLinhas row in Model.rows)
+                                {
+                                    even = !even;
+                                    <div class="gradeA @row.CssClass @(!even ? "odd" : "even")" role="row" 
+                                         style="float:left;width:100%;">
+                                        @foreach (TableCelulas cell in row.cells)
+                                        {
+                                            if (cell.AjaxLink != null)
+                                            {
+                                                <div class="@cell.CssClass" style="@cell.Style">
+                                                    @Ajax.ActionLink(cell.Value, cell.AjaxLink.action, cell.AjaxLink.controller, cell.AjaxLink.route, cell.AjaxLink.ajaxOptions)
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                if (cell.CheckboxSwitch)
+                                                {
+                                                    <div class="@cell.CssClass" style="@cell.Style">
+                                                        <div class="material-switch pull-right">
+                                                            <input id="@cell.ID" name="@cell.Name" type="checkbox" value="@(cell.Name.Split(new string[] { "-" }, StringSplitOptions.None)[1])"
+                                                                   @(Convert.ToBoolean(cell.Value) ? "checked='checked'" : "")>
+                                                            <label for="@cell.ID" class="label-default"></label>
+                                                        </div>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+
+                                                    if (cell.link == null)
+                                                    {
+                                                        <div class="@cell.CssClass" style="@cell.Style">
+                                                            @cell.Value
+                                                        </div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="@cell.CssClass" style="@cell.Style">
+                                                            @if (!string.IsNullOrEmpty(cell.link.href))
+                                                            {
+                                                                <a id="@cell.link.ID" href="@cell.link.href">@cell.Value</a>
+                                                            }
+                                                            else if (!string.IsNullOrEmpty(cell.link.url))
+                                                            {
+                                                                <a id="@cell.link.ID" href="@Url.Content(cell.link.url)">@cell.Value</a>
+                                                            }
+                                                            else if (!string.IsNullOrEmpty(cell.link.action) || !string.IsNullOrEmpty(cell.link.controller))
+                                                            {
+                                                                if (cell.link.route == null)
+                                                                {
+                                                                    Html.ActionLink(cell.Value, cell.link.action, cell.link.controller, new { id = cell.link.ID });
+                                                                }
+                                                                else
+                                                                {
+                                                                    <div>
+                                                                        @Html.ActionLink(cell.Value, cell.link.action, cell.link.controller, cell.link.route, new { id = cell.link.ID })
+                                                                    </div>
+                                                                }
+                                                            }
+                                                        </div>
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    </div>
+                                }
+                            }
+                            else
+                            {
+                                <div class="gradeA odd" role="row" colspan="@Model.columns.Count()">
+                                    <div class="sorting_1" colspan="@Model.columns.Count()" style="text-align: center">@Model.Empty</div>
+                                </div>
+                            }
+                        </div>
+
+                    @*</div>*@
+                    <div>
+                        @*<table class="table-hcc table-hcc-striped table-hcc-bordered table-hcc-hover dataTable no-footer dtr-inline" role="grid" aria-describedby="dataTables" style="width: 100%">
+                            <thead>
+                                <tr role="row">
+                                    @foreach (TableColunas column in Model.columns)
+                                    {
+                                        <th tabindex="@column.tabindex" aria-controls="@column.aria_controls" rowspan="@column.rowspan"
+                                            colspan="@column.colspan" aria-sort="@column.aria_sort" aria-label="@column.aria_label"
+                                            style="@column.Style">@column.Text</th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.rows.Count > 0)
+                                {
+                                    bool even = true;
+                                    foreach (TableLinhas row in Model.rows)
+                                    {
+                                        even = !even;
+                                        <tr class="gradeA @(!even ? "odd" : "even")" role="row">
+                                            @foreach (TableCelulas cell in row.cells)
+                                            {
+                                                if (cell.AjaxLink != null)
+                                                {
+                                                    <td class="sorting_1" style="@cell.Style">
+                                                        @Ajax.ActionLink(cell.Value, cell.AjaxLink.action, cell.AjaxLink.controller, cell.AjaxLink.route, cell.AjaxLink.ajaxOptions)
+                                                    </td>
+                                                }
+                                                else
+                                                {
+                                                    if (cell.CheckboxSwitch)
+                                                    {
+                                                        <td class="sorting_1" style="@cell.Style">
+                                                            <div class="material-switch pull-right">
+                                                                <input id="@cell.ID" name="@cell.Name" type="checkbox" value="@(cell.Name.Split(new string[] { "-" }, StringSplitOptions.None)[1])"
+                                                                        @(Convert.ToBoolean(cell.Value) ? "checked='checked'" : "")>
+                                                                <label for="@cell.ID" class="label-default"></label>
+                                                            </div>
+                                                        </td>
+                                                    }
+                                                    else
+                                                    {
+
+                                                        if (cell.link == null)
+                                                        {
+                                                            <td class="sorting_1" style="@cell.Style">
+                                                                @cell.Value
+                                                            </td>
+                                                        }
+                                                        else
+                                                        {
+                                                            <td class="sorting_1" style="@cell.Style">
+                                                                @if (!string.IsNullOrEmpty(cell.link.href))
+                                                                {
+                                                                    <a id="@cell.link.ID" href="@cell.link.href" >@cell.Value</a>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <a id="@cell.link.ID" href="@Url.Content(cell.link.url)">@cell.Value</a>
+                                                                }
+                                                            </td>
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr class="gradeA odd" role="row" colspan="@Model.columns.Count()">
+                                        <td class="sorting_1" colspan="@Model.columns.Count()" style="text-align: center">@Model.Empty</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

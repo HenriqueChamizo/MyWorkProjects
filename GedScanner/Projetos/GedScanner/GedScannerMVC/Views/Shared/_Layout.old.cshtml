@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>@ViewBag.Title - GED</title>
+    @*<link rel="stylesheet" href="~/Content/bootstrap.min.css" />*@
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="icon" href="../Image/Logo/ged1-so-red.png">
+    <link href="@Url.Content("~/bootstrap/css/bootstrap-theme.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/bootstrap/css/bootstrap.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Styles/Master.hcc.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/bootstrap/js/bootstrap.js")"></script>
+    <script src="@Url.Content("~/bootstrap/js/npm.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-3.1.1.js")"></script>
+    <script type="text/javascript" language="javascript" src="@Url.Content("~/Scripts/online_demo_operation.js")"></script>
+    @RenderSection("JavascriptHeader", required: false)
+</head>
+<body>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br />
+                </div>
+                <div class="col-md-6">
+                    @Html.Partial("DiaAtual")
+                    @*<asp:Panel ID="panelDiaAtual" runat="server"></asp:Panel>*@
+                    <img src="@Url.Content("~/Image/Logo/ged1-gray-black.png")" style="width:50%;margin: 15px 0px 0px -15px;" />
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            @Html.Partial("UserAtual")
+                            @*<asp:Panel ID="panelUserAtual" runat="server"></asp:Panel>*@
+                        </div>
+                        <div class="col-md-12"><br /></div>
+                        <div class="col-md-12"><br /></div>
+                        <div class="col-md-12">
+                            @Html.Partial("ClienteAtual")
+                            @*<asp:Panel ID="panelClienteAtual" runat="server"></asp:Panel>*@
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default-hcc">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="linkHome" class="navbar-brand" href="@Url.Action("Index", "Geral")">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a id="lkbPlanoContas" href="@Url.Action("Index", "PlanoContas")" >Plano de Contas <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                        <a id="lkbConta" href="@Url.Action("Index", "Conta")">Contas </a>
+                    </li>
+                    <li>
+                        <a id="lkbLote" href="@Url.Action("Index", "Lote")">Lote </a>
+                    </li>
+                    <li class="dropdown">
+                        <a id="lkbArquivo" href="@Url.Action("Index", "Arquivo")" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classificação <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a id="lkbDropArquivoTipo" href="@Url.Action("Index", "ArquivoTipo")">Tipos de Arquivos</a>
+                            </li>
+                            @*<li role="separator" class="divider"></li>*@
+                            <li><a id="lkbDropTwo" href="#">Lotes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                @*<div class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>*@
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-cog">   </span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                @*<asp:LinkButton ID="lkbSair" runat="server" OnClick="lkbSair_Click">Sair</asp:LinkButton>*@
+                                <a id="lkbSair" href="@Url.Action("Sair", "Home")">Sair</a>
+                            </li>
+                            <li>
+                                @*<asp:LinkButton ID="lkbTrocar" runat="server" OnClick="lkbTrocar_Click">Trocar Empresa</asp:LinkButton>*@
+                                <a id="lkbTrocar" href="@Url.Action("Troca", "Home")">Trocar Empresa</a>
+                            </li>
+                            
+                            @*<li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>*@
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        @RenderBody()
+    </div>
+    @*<footer id="footer1" class="container-fluid text-center bg-lightgray" style="margin-top: 100px;display:none;" role="navigation">
+        <div class="copyrights" style="margin-top:25px;">
+            <p>
+                Assecont Contabilidade/Tecnologia © @DateTime.Now.ToString("yyyy"), Todos os Direitos Reservados
+                <br>
+                <span>Web Design por: Henrique Conrado Chamizo</span>
+            </p>
+            @*<p><a href="https://www.linkedin.com/in/michael-clark-webdeveloper" target="_blank">Linkedin <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a></p>*
+        </div>
+    </footer>
+    <footer id="footer2" class="container-fluid text-center bg-lightgray navbar-fixed-bottom" style="margin-top: 100px;display:none;" role="navigation">
+        <div class="copyrights" style="margin-top:25px;">
+            <p>
+                Assecont Contabilidade/Tecnologia © @DateTime.Now.ToString("yyyy"), Todos os Direitos Reservados
+                <br>
+                <span>Web Design por: Henrique Conrado Chamizo</span>
+            </p>
+            @*<p><a href="https://www.linkedin.com/in/michael-clark-webdeveloper" target="_blank">Linkedin <i class="fa fa-linkedin-square" aria-hidden="true"></i> </a></p>*
+        </div>
+    </footer>*@
+    @RenderSection("scripts", false)
+    @*<script>
+        function loadOn(){
+            if (document.body.clientHeight == document.body.scrollHeight) {
+                document.getElementById("footer1").style.display = "block";
+                document.getElementById("footer2").style.display = "none";
+            }
+            else {
+                document.getElementById("footer1").style.display = "none";
+                document.getElementById("footer2").style.display = "block";
+            }
+        }
+        loadOn();
+    </script>*@
+</body>
+</html>

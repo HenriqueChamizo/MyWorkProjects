@@ -1,0 +1,42 @@
+c:\users\henriquec\documents\visual studio 2012\Projects\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.exe.config
+c:\users\henriquec\documents\visual studio 2012\Projects\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.exe
+c:\users\henriquec\documents\visual studio 2012\Projects\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.pdb
+c:\users\henriquec\documents\visual studio 2012\Projects\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.csprojResolveAssemblyReference.cache
+c:\users\henriquec\documents\visual studio 2012\Projects\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.FrmPrincipal.resources
+c:\users\henriquec\documents\visual studio 2012\Projects\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Properties.Resources.resources
+c:\users\henriquec\documents\visual studio 2012\Projects\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.csproj.GenerateResource.Cache
+c:\users\henriquec\documents\visual studio 2012\Projects\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.exe
+c:\users\henriquec\documents\visual studio 2012\Projects\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.pdb
+C:\Users\henriquec\Documents\Visual Studio 2012\Projects\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Inicial.resources
+C:\Users\henriquec\Documents\Visual Studio 2012\Projects\FiscalDigital\FiscalDigital\bin\Debug\Canducci.Zip.dll
+C:\Users\henriquec\Documents\Visual Studio 2012\Projects\FiscalDigital\FiscalDigital\bin\Debug\Canducci.Zip.pdb
+C:\Users\henriquec\Documents\Visual Studio 2012\Projects\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Notas.resources
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.exe.config
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.exe
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.pdb
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.EditaParticipante.resources
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.FrmPrincipal.resources
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Inicial.resources
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Notas.resources
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Properties.Resources.resources
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.csproj.GenerateResource.Cache
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.exe
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.pdb
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.csprojResolveAssemblyReference.cache
+S:\USUARIOS\henrique\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Divergencias.resources
+D:\Henrique\Backup\PenDrive\PenDrive\Protegida\Projetos\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.exe.config
+D:\Henrique\Backup\PenDrive\PenDrive\Protegida\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.exe
+D:\Henrique\Backup\PenDrive\PenDrive\Protegida\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.pdb
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.exe.config
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.exe
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.pdb
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.exe
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\bin\Debug\FiscalDigital.pdb
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.csprojResolveAssemblyReference.cache
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Divergencias.resources
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.EditaParticipante.resources
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.FrmPrincipal.resources
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Inicial.resources
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Notas.resources
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.Properties.Resources.resources
+D:\BitBucket\Assecont\Projetos\FiscalDigital\FiscalDigital\obj\Debug\FiscalDigital.csproj.GenerateResource.Cache

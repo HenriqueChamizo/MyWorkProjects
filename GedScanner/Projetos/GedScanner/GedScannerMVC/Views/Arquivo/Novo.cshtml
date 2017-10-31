@@ -1,0 +1,274 @@
+﻿@using GedScannerMVC.ClassView
+@model System.Int32?
+@{
+    ViewBag.Title = "Novo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<input type="hidden" id="indiceLote" value="@Model.ToString()" />
+<section class="content-header">
+    @Html.Partial("_HeaderGeral", new _HeaderGeral() { imageSrc = "~/Image/Paginas/Lote-gray-detail.png", title = "Arquivos", TitlePageSmall = null })
+</section>
+<section class="content">
+    @Scripts.Render("~/Scripts/dynamsoft-dwt-2")
+    <link href="@Url.Content("~/Styles/style.css")" type="text/css" rel="stylesheet" />
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3>Customizar Scanner</h3>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div @*id="divProductDetail"*@ class="col-sm-12">
+                            <div @*id='divTwainType'*@ class='row'>
+                                <div class='col-sm-4'>
+                                    <div class="form-group floating-label">
+                                        <h4>Opções</h4>
+                                        @*<div class="form-group floating-label">
+                                            <div class="checkbox checkbox-inline checkbox-styled">
+                                                <label id="lblfinalizar" onclick="finalizarclick()">
+                                                    <input type="checkbox" id="ckbfinalizar" name="ckbfinalizar" class="minimal" value="@(Convert.ToBoolean(Model.finalizar) ? "true" : "false")"
+                                                           @(Convert.ToBoolean(Model.finalizar) ? "checked" : "") onclick="finalizarclick()" />
+                                                    @(" Finalizar Plano de Contas")
+                                                </label>
+                                            </div>
+                                        </div>*@
+                                        <div class="checkbox checkbox-inline checkbox-styled">
+                                            <label id='lblShowUI' for='ShowUI'>
+                                                <input type="checkbox" id="ShowUI" class="minimal" onclick="finalizarclick()" />
+                                                @(" Mostrar Driver")
+                                                @*<input type='checkbox' id='ShowUI' /> Mostrar Driver*@
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-inline checkbox-styled" style="display:none;">
+                                            <label for='ADF'>
+                                                <input type="checkbox" id="ADF" class="minimal" onclick="finalizarclick()" />
+                                                @(" AutoFeeder")
+                                                @*<input type='checkbox' id='ADF' /> AutoFeeder*@
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-inline checkbox-styled">
+                                            <label for='Duplex'>
+                                                <input type="checkbox" id="Duplex" onclick="finalizarclick()" />
+                                                @(" Frente e Verso")
+                                                @*<input type='checkbox' id='Duplex' /> Frente e Verso*@
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-sm-4'>
+                                    <div class="form-group">
+                                        <h4>Escala de</h4>
+                                        <label class="radio-inline radio-styled radio-primary" style="opacity: 1" for='BW'>
+                                            <input type="radio" id='BW' name='PixelType' checked="" /><span>Preto&amp;Branco</span>
+                                        </label>
+                                        <label class="radio-inline radio-styled radio-primary" style="opacity: 1" for='Gray'>
+                                            <input type="radio" id='Gray' name='PixelType' checked="" /><span>Cinza</span>
+                                        </label>
+                                        <label class="radio-inline radio-styled radio-primary" style="opacity: 1" for='RGB'>
+                                            <input type="radio" id='RGB' name='PixelType' checked="" /><span>Cor</span>
+                                        </label>
+                                        @*<div class="radio-inline">
+                                            <label for='BW'>
+                                                <input type='radio' id='BW' name='PixelType' />Preto&amp;Branco
+                                            </label>
+                                        </div>
+                                        <div class="radio-inline">
+                                            <label for='Gray'>
+                                                <input type='radio' id='Gray' name='PixelType' />Cinza
+                                            </label>
+                                        </div>
+                                        <div class="radio-inline">
+                                            <label for='RGB'>
+                                                <input type='radio' id='RGB' name='PixelType' />Cor
+                                            </label>
+                                        </div>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="form-group floating-label">
+                                <label for="source">Selecione uma fonte</label>
+                                <select size="1" id="source" style="" onchange="source_onchange()" class="form-control">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class='col-sm-4'>
+                            <div class="form-group floating-label">
+                                <label for="Resolution">Resolução</label>
+                                <select size='1' id='Resolution' class='form-control'>
+                                    <option value='300'>300 dpi</option>
+                                    <option value='200'>200 dpi</option>
+                                    <option value='100'>100 dpi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="pNoScanner" class="col-sm-12" style="display:none;">
+                            <a href="javascript: void(0)" class="ShowtblLoadImage" id="aNoScanner">
+                                <b>O que fazer se não tenho um Scanner conectado?</b>
+                            </a>
+                        </div>
+                        <div class="col-sm-12">
+                            @*<div id="divNoteMessage"></div>*@
+                            <div id="DWTemessageContainer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <div style="float:left;width:49%;text-align:left">
+                        <input class="btn btn-default" @*btnOrg*@ type="button" value="Carregar imagem" onclick="return btnLoad_onclick()" />
+                    </div>
+                    <div style="float:right;width:49%;text-align:right">
+                        <input @*id="btnScan"*@ class="btn btn-default" type="button" value="Scanear" onclick="acquireImage();" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="box box-primary" style="min-height: 703px;">
+                <div class="box-header with-border">
+                    <h3>Images Capturadas</h3>
+                </div>
+                <div class="box-body">
+                    <div>
+                        @*<script>
+                            // JavaScript Document
+                            var _gaq = _gaq || [];
+                            _gaq.push(['_setAccount', 'UA-19660825-1']);
+                            _gaq.push(['_setDomainName', 'dynamsoft.com']);
+                            _gaq.push(['_trackPageview']);
+                            (function () {
+                                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                            })();
+                        </script>*@
+                    </div>
+                    <script type="text/javascript">
+                        window.history.forward();
+                        function noBack() {
+                            window.history.forward();
+                        }
+                    </script>
+                    <div id="tblLoadImage" style="visibility:hidden; height:125px">
+                        <ul>
+                            <li><b>You can:</b><a href="javascript: void(0)" style="text-decoration:none; padding-left:185px" class="ClosetblLoadImage">X</a></li>
+                        </ul>
+                        <div id="notformac1" style="background-color:#f0f0f0; padding:5px;">
+                            <ul>
+                                <li><img alt="arrow" src="@Url.Content("~/Images/arrow.gif")" width="9" height="12" /><b>Install a Virtual Scanner:</b></li>
+                                <li style="text-align:center;"><a id="samplesource32bit" href="http://www.dynamsoft.com/demo/DWT/Sources/twainds.win32.installer.2.1.3.msi">32-bit Sample Source</a> <a id="samplesource64bit" style="display:none;" href="http://www.dynamsoft.com/demo/DWT/Sources/twainds.win64.installer.2.1.3.msi">64-bit Sample Source</a> from <a href="http://www.twain.org">TWG</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="dwtcontrolContainer" style="width: 562px!important;margin: 0px auto;float: none;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3>Salvar Imagens</h3>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group floating-label">
+                                <input type="text" size="20" id="txt_fileName" class="form-control" />
+                                <label for="txt_fileName">Nome Principal</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12" style="display:none">
+                            <div class="checkbox-inline">
+                                <label for="MultiPageTIFF">
+                                    <input type="checkbox" id="MultiPageTIFF" /> Multi-Page TIFF
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label for="MultiPagePDF">
+                                    <input type="checkbox" id="MultiPagePDF" /> Multi-Page PDF
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ImgSizeEditor" style="visibility:hidden; text-align:left;">
+                        <ul>
+                            <li>
+                                <label for="img_height">
+                                    New Height :
+                                    <input type="text" id="img_height" style="width:50%;" size="10" />
+                                    pixel
+                                </label>
+                            </li>
+                            <li>
+                                <label for="img_width">
+                                    New Width :&nbsp;
+                                    <input type="text" id="img_width" style="width:50%;" size="10" />
+                                    pixel
+                                </label>
+                            </li>
+                            <li>
+                                Interpolation method:
+                                <select size="1" id="InterpolationMethod">
+                                    <option value=""></option>
+                                </select>
+                            </li>
+                            <li style="text-align:center;">
+                                <input type="button" value=" OK " id="btnChangeImageSizeOK" onclick="btnChangeImageSizeOK_onclick();" />
+                                <input type="button" value=" Cancel " id="btnCancelChange" onclick="btnCancelChange_onclick();" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <div style="float:left">
+                        <input id="btnSave" @*class="btnOrg"*@ class="btn btn-default" type="button" value="Salvar Local" onclick="saveUploadImage('local')" />
+                    </div>
+                    <div style="float:right">
+                        <input id="btnUpload" @*class="btnOrg"*@ class="btn btn-default" type="button" value="Salvar" onclick="saveUploadImage('server')" />
+                    </div>
+                </div>
+                <div class="narrow-screen">
+                    <div class="tips-header clearfix">
+                        <a class="logo-dwt" href="http://www.dynamsoft.com/Products/WebTWAIN_Overview.aspx" target="_blank">
+                            <img alt="Dynamic Web TWAIN logo" src="@Url.Content("~/Images/logo-dwt-68x68.png")">
+                        </a>
+                        <img class="img-onlineDemo" src="@Url.Content("~/Images/img-onlineDemo-126x21.png")" alt="Dynamic Web TWAIN onlineDemo" />
+                    </div>
+                    <div class="tips-desktop"><img src="@Url.Content("~/Images/sc-desktop-only.png")" border="0" alt="" width="280" /></div>
+                    <p class="tips">
+                        Sorry! <br />
+                        This page is an online demo of Dynamic Web TWAIN which runs in browsers on Windows and Mac OS X only, for now. Thanks!
+                    </p>
+                </div>
+                <script type="text/javascript">
+                    $("div.PCollapse .collItem>div").click(function () {
+                        if ($(this).next().css("display") == "none") {
+                            $(".divType").next().hide("normal");
+                            $(".divType").children(".mark_arrow").removeClass("expanded");
+                            $(".divType").children(".mark_arrow").addClass("collapsed");
+                            $(this).next().show("normal");
+                            $(this).children(".mark_arrow").removeClass("collapsed");
+                            $(this).children(".mark_arrow").addClass("expanded");
+                        }
+                    });
+
+                    // Assign the page onload fucntion.
+                    $(function () {
+                        pageonload();
+                    });
+
+                    $('#DWTcontainer').hover(function () {
+                        $(document).bind('mousewheel DOMMouseScroll', function (event) {
+                            stopWheel(event);
+                        });
+                    }, function () {
+                        $(document).unbind('mousewheel DOMMouseScroll');
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</section>
